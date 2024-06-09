@@ -12,7 +12,7 @@
     }
 </style>
 <head>
-    <title>znhao203.github.io</title>
+    <title>zening-home-page</title>
 </head>
 <body>
     <nav>
@@ -41,13 +41,49 @@
                 •  Developed secure embedded software in C for wireless/DSP devices with a focus on hardware security.<br>
                 •  Conducted Bluetooth stress testing for upcoming product release, ensuring robust performance. 
             </p>
+            <p>
+                It's been over a month since I started my internship at Onsemi.
+                During this time, I have directly contributed to the release process 
+                of an SDK package with a focus on Bluetooth applications. <br>
+                My first Jira ticket involved improving all global flags that were prone 
+                issues due to compiler optimization.
+                I then worked on a structural change to move Bluetooth disconnection and
+                 pairing handling code from the abstraction layer to the application layer, 
+                 as per a customer request. <br>
+                I verified these changes on boards for all existing Bluetooth sample 
+                applications in the SDK package, including FOTA (Firmware-Over-The-Air) 
+                and freeRTOS (ARM's Real Time Operating System).
+                Currently, I'm conducting verification testings for these BLE sample applications. <br>
+                The main language I used for development is C, utilizing the Eclipse IDE. 
+                Through this experience, I have learned a great deal about embedded software for 
+                wireless/DSP devices and firmware testing using lap equipment.
+            </p>
         <h3>Undergraduate Research Assistant</h3>
             <h4>University of Waterloo</h4>
             <h4>2024.3-2024.5</h4>
             <p>
                 •  Conducted network performance analysis with simulations to test Linux traffic control scheduler fairness. <br>
                 •  Explored Linux Qdisc scheduler traits and designed customized traffic flow generation algorithms using Python.<br>
-                •  Tested Qdisc settings’ impact on traffic shaping and throughput, aiming to disrupt a scheduler fairness scheme. 
+                •  Tested Qdisc settings' impact on traffic shaping and throughput, aiming to disrupt a scheduler fairness scheme. 
+            </p>
+            <p>
+                Under the supervision of Prof. Mina Arashloo, I conducted an experiment to test 
+                the robustness of network traffic performance.
+                I used network traffic simulations to test the fairness of Linux traffic control 
+                schedulers, QDiscs (Queuing Disciplines), with a focus on the HHF varient (Heavy-Hitter Filter).<br>
+                I tested different QDisc configuration's impact on traffic shaping and throughput, 
+                aiming to better understand the behaviour of such QDisc varient and potentially 
+                disrupt a scheduler's fairness scheme.
+                To achieve this, I designed the traffic flow generation algorithms, and wrote the 
+                code to setup the experiment.<br>
+                The multi-thread program created multiple continuous traffic flows, sending packets 
+                under both light and heavy traffic conditions.
+                For the same QDisc configuation, I compared the throughput plots for various traffic flow combinations.
+                For different QDisc configurations, I compared the average throughput for all flows with the same traffic generator.<br>
+                By comparing these generated plots, I noticed some exception cases with unexpected
+                 flow behaviour under some specific configurations.
+                Although my research has concluded, the reasons for these exception remain areas for further investigation. 
+
             </p>
         <h3>Systems Software Development Student</h3>
             <h4>Blackberry, Ltd.</h4>
@@ -57,6 +93,24 @@
                 •  Improved test coverage with code generation. Integrated framework into test ware compilation using Makefile.<br>
                 •  Implemented runtime fault injection for error detection using statistical methods, ensuing its accuracy and reliability.
             </p>
+            <p>
+                I designed a Python test framework for Blackberry Certicom's system-level cryptography library, 
+                to support the application of a safety certification.
+                The goal of the test framework is to achieve (1) higher code coverage and (2) proof of zero false-negative test cases. <br> 
+                From the header files, I generated JSON configuration files containing information for all individual functions. 
+                I then customized the configuration files to include setup and teardown processes for each functions, 
+                as they are different steps in the entire encryption/decription process. 
+                I integrated this framework into the testware Makefile system, allowing Python to generate the test 
+                files in C during compilation process. 
+                These new test files will be executed along with the manually written testware. <br>
+                For the second goal, I designed a runtime fault injection feature using a statistical approach.
+                The user inputs a number for the fault injection percentage, and using macros and an existing random number generator, 
+                the framework decides whether to insert a fault to a test case based on that percentage.
+                With no false-negative test cases, the detected fault percentage approached the exact same 
+                percentage as the user input in a long run. <br>
+                The automated test framework supports the testing of all ECC varient algorithms and SHA256. 
+                The development is in Linux environment, using Virtual Box.
+            </p>
         <h3>Software/Firmware Engineering Co-op</h3>
             <h4>Microchip Technology, Inc.</h4>
             <h4>2023.1-2023.4</h4>
@@ -64,6 +118,18 @@
                 •  Performed C++ low-level programming, improved a chip flashing dynamic-linked library. <br>
                 •  Integrated data transfer for multiple chip boards, added support via intermediate device, developed its device driver.<br>
                 •  Addressed external customer requests to resolve DLL bugs and improve chip communication speed with I2C.
+            </p>
+            <p>
+                During my second term at Microchip, I focused on various C++ dynamic-linked libraries used for chip-flashing, 
+                specifically for the addition of a new device, the Universal Controller (UC), which serves as an intermediate 
+                device between the PC and the Evaluation Board (EVB) connection. <br>
+                For the Azurite series platforms, I developed a device driver and interface to use the UC to control multiple chip platforms.
+                This involved adding support for the UC as an intermediary device. Additionally, I addressed external stomer requests 
+                by revolving DLL bugs for the driver of a prototype chip board.<br>
+                I also enhanced chip communication speed in I2C mode by changing from single-byte transmission to multi-byte transmission.
+                Other tasks included reorganizing the code structure of the DLL library and performing regression tests and verification tests 
+                for my modifications. <br>
+                The code was written in C++, and the development environment was Windows.
             </p>
         <h3>Software/Firmware Engineering Co-op</h3>
             <h4>Microchip Technology, Inc.</h4>
@@ -73,6 +139,13 @@
                 •  Collaborated with firmware and validation teams to customize features for streamlined testing process. <br>
                 •  Integrated Python equipment library and designed new data processing methods to enhance measurement accuracy for devices like oscilloscopes and function generators. 
             </p>
+            <p>
+                I developed a Python validation tool for Azurite-series chip platforms.
+                This involved transitioning from an older TCL tool to Python, which enhanved flexibility in code generation and test automation.
+                I imported existing features from the TCL tool and added new ones to support a switch box for managing multiple chip platforms.
+                Additionally, I reorganized the tool's code structure to be chip-platform-independent, makding future expansions easier.
+                I also improved the accuracy of measurement methods in oscilloscopes within a Python equipment library. 
+            </p>
         <h3>Technical Intern</h3>
             <h4>Synopsys, Inc.</h4>
             <h4>2021.7-2021.12</h4>
@@ -80,19 +153,31 @@
                 •  Developed Python validation tool for regression tests of Proteus solutions, adopted by multiple QA project groups. <br>
                 •  Created code coverage analysis method and designed lexers & parsers for code analysis in Python and TCL under Linux environment. Detected uncovered branches and syntax errors. Opened 4 Jira tickets to address issues.
             </p>
+            <p>
+                For my first internship, I designed a Python tool to analyze the code coverage of TCL/Tk source code and generate HTML reports 
+                for regression tests, similar to the LCOV tool in GCC.
+                The tool uses lexer and parsers to analyze and modify source code and process output logs to calculate code coverage. 
+                I later expanded it to also process Python and Basic code.<br>
+                Using the validation tool, I detected uncovered branches and syntax errors in the source code, 
+                resulting in the creation of four Jira tickets for source code improvement.
+                After presenting the tool, it was adopted by multiple QA project groups. <br>
+            </p>
     </div>
     <div id="projects">
     </div>
     <div id="academics">
         <h2 style="font-family:times;font-weight:bold">Academic Profile </h2>
         <h3>Program</h3>
-        <p style="font-weight:bold">University of Waterloo</P>
-        <p>Bachelor of Computer Science, Honours, Co-op Program, Digital Hardware Speicialization </p> 
+        <p style="font-weight:bold">University of Waterloo</p>
+        <p>Candidate for Bachelor of Computer Science</p>
+        <p>Sep. 2020 - Apr. 2025 (Expected)</p>
+        <p>Honours, Co-op Program, Digital Hardware Speicialization </p> 
         <h3>Awards</h3>
         <p>
             Academic Standing: Excellent Standing (highest possible)<br>
-            Awards: University of Waterloo President's Scholarship of Distinction (2021)<br>
-            Term Honours: Term Distinction for Winter 2021, Winter 2022, Winter 2023, Spring 2023, Fall 2023, Winter 2024
+            Awards: Recipent of $2000 University of Waterloo President's Scholarship of Distinction (2021)<br>
+            Term Honours: Term Distinction for Winter 2021, Winter 2022, Winter 2023, Spring 2023, Fall 2023, Winter 2024<br>
+            Highlight Courses: 
         </p>
         <h3>Coursera Courses</h3>
         <p>
