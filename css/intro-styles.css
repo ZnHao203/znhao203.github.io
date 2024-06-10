@@ -1,0 +1,46 @@
+.intro-outer {
+    border: 2px solid #562313;
+    padding: 10px;
+    background:hsla(16, 15%, 69%, 0.1);
+    max-width: 750px;
+    width: fit-content;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+.intro-text {
+    border: 1px solid #562313;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:10px;
+    background:hsla(16, 15%, 69%, 0.3);
+    max-width: 90%;
+    width: fit-content;
+    box-sizing: content-box;
+    word-wrap: break-word;
+    block-size:auto;
+}
+.skills-text {
+    border: 1px solid #562313;
+    padding-left: 0;
+    padding-right: 10px;
+    margin:10px;
+    background:hsla(16, 15%, 69%, 0.3);
+    max-width: 100%;
+    width: fit-content;
+    box-sizing: content-box;
+    word-wrap: break-word;
+    block-size:auto;
+}
+.contact-text {
+    border: 1px solid #562313;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background:hsla(16, 15%, 69%, 0.3);
+    max-width: 100%;
+    width: fit-content;
+    box-sizing: content-box;
+    word-wrap: break-word;
+    block-size:auto;
+}

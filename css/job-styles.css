@@ -1,0 +1,52 @@
+
+p.job-keywords {
+    text-align: left;
+    font-size: 11pt;
+    line-height: 1.2;
+    padding:0;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+p.job-description {
+    overflow:scroll;
+    max-height: 150pt;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+/* Custom scrollbar styles */
+p.job-description::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+p.job-description::-webkit-scrollbar-track {
+    background: #b9b1b0b9; /* Color of the scrollbar track */
+}
+
+p.job-description::-webkit-scrollbar-thumb {
+    background: #b54747a8; /* Color of the scrollbar thumb */
+}
+
+p.job-description::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
+.job-block {
+    border: 1px solid #562313;
+    padding: 10px;
+    margin:10px;
+    background:hsla(16, 15%, 69%, 0.3);
+    max-width: 500px;
+    width: fit-content;
+    box-sizing: content-box;
+    word-wrap: break-word;
+    block-size:auto;
+}
+.job-title {
+    border: 1px solid #562313;
+    padding: 5px;
+    padding-bottom: 1px;
+    background:hsla(16, 15%, 69%, 0.7);
+    width: 90%;
+    box-sizing: content-box;
+    word-wrap: break-word;
+}
