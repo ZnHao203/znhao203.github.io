@@ -44,3 +44,11 @@
     word-wrap: break-word;
     block-size:auto;
 }
+.course-column {
+    border: 1px solid #562313;
+    padding: 5px;
+    max-width: 500px;
+    width: fit-content;
+    float:left;
+    margin: 5px;
+}

@@ -59,10 +59,12 @@ img {
     padding: 5px;
     margin:10px;
     background:hsla(16, 15%, 69%, 0.3);
-    max-width: 90%;
+    max-width: 95%;
     width: fit-content;
     box-sizing: content-box;
     word-wrap: break-word;
     block-size:auto;
+    overflow: auto;
+
 }
 
