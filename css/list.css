@@ -3,8 +3,8 @@ ul li {
     width: fit-content;
 }
 li.page_nav {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    margin:5px;
     border: 2px solid #562313;
     padding: 5px;
     background-color: #ebe5cfb3;

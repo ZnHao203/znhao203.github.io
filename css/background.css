@@ -1,21 +1,4 @@
 
-body {
-    background-image: url('../img/IMG_27381.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:right;
-    width: 100vw;
-
-}
-@media (max-width: 768px) {
-    body {
-        background-size: cover; /* Adjust as needed */
-        background-position: center;
-        
-    }
-}
-
-
 img.bg {
     /* Set rules to fill background */
     min-height: 100%;
