@@ -1,0 +1,13 @@
+body {
+    background-image: url('../img/IMG_27381.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+    background-attachment: fixed;
+}
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Adjust as needed */
+        background-position: center;
+    }
+}
