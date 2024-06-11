@@ -19,6 +19,6 @@ img.bg {
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
     img.bg {
         left: 40%;
-        margin-left: -512px;   /* 50% */
+        margin-left: -410px;   /* 50% */
     }
 }
