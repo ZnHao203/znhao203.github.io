@@ -35,18 +35,20 @@ p.job-description::-webkit-scrollbar-thumb:hover {
     padding: 10px;
     margin:10px;
     background:hsla(16, 15%, 69%, 0.3);
-    max-width: 500px;
+    max-width: 400px;
+    max-height: 400px;
     width: fit-content;
     box-sizing: content-box;
     word-wrap: break-word;
     block-size:auto;
+    float:left;
 }
 .job-title {
     border: 1px solid #562313;
     padding: 5px;
     padding-bottom: 1px;
     background:hsla(16, 15%, 69%, 0.7);
-    width: 90%;
+    width: 95%;
     box-sizing: content-box;
     word-wrap: break-word;
 }
