@@ -9,5 +9,8 @@ body {
     body {
         background-size: cover; /* Adjust as needed */
         background-position: center;
+        background-attachment: scroll;
+        height: 100vh; /* Sets the height to 100% of the viewport height */
+    width: 100vw; /* Sets the width to 100% of the viewport width */
     }
 }
