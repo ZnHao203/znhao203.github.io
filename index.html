@@ -27,8 +27,8 @@
     <div class="intro-outer">
         <p>
             Thank you for visiting my website. <br>
-            This website is partially <strong>under construction</strong> right now. 
-            Please be patient for more contents to be added.
+            This website is partially <strong>under construction</strong> right now.  
+            Please be patient while more content is added. 
         </p>
         <h1 id="top">Welcome! I'm Zening</h1>
 
@@ -36,11 +36,11 @@
             <p>
                 I'm a senior Computer Science student at University of Waterloo. 
                 I specialize in Digital Hardware and am passionate about computer security.<br>
-                Currently, I'm working as a Firmware Developer Co-op at Onsemi, 
-                where I contribute to their latest Bluetooth product development. 
+                Currently, I'm working as a firmware developer co-op at Onsemi, 
+                contributing to the latest Bluetooth product development. 
                 My previous internships involve embedded software programming, 
                 system-level cryptography, and computer networking research. <br>
-                I'm open to Co-op for Fall 2024, and will graduate on April 2025.
+                I'm open to Co-op for Fall 2024 and will graduate in April 2025.
             </p>
         </div>
 
@@ -78,8 +78,8 @@
             <div class="skills-text">
                 <p><b>Programming Languages</b></p>
                 <ul>
-                    <li>Proficient with work experience: C, C++, Python, Bash</li>
-                    <li>Familiar with & Knowledge of: HTML, CSS, SQL, R, Java</li>
+                    <li>Proficient with work experience: C, C++, Python, Bash, Makefile</li>
+                    <li>Familiar with & Knowledge of: CSS, HTML, JavaScript, JSQL, R, Racket, SQL</li>
                 </ul>
                 <p><b>Development Tools</b></p>
                 <ul>
@@ -132,18 +132,18 @@
                 <p class="job-description">
                     It's been over a month since I started my internship at Onsemi.
                     During this time, I have directly contributed to the release process 
-                    of an SDK package with a focus on Bluetooth applications. <br>
-                    My first Jira ticket involved improving all global flags that were prone 
-                    issues due to compiler optimization.
+                    of an SDK package focusing on Bluetooth applications. <br>
+                    My first Jira ticket involved improving all global flags prone 
+                    to issues due to compiler optimization.
                     I then worked on a structural change to move Bluetooth disconnection and
                     pairing handling code from the abstraction layer to the application layer, 
                     as per a customer request. <br>
                     I verified these changes on boards for all existing Bluetooth sample 
                     applications in the SDK package, including FOTA (Firmware-Over-The-Air) 
                     and freeRTOS (ARM's Real Time Operating System).
-                    Currently, I'm conducting verification testings for these BLE sample applications. <br>
+                    Currently, I'm conducting verification tests for these BLE sample applications. <br>
                     The main language I used for development is C, utilizing the Eclipse IDE. 
-                    Through this experience, I have learned a great deal about embedded software for 
+                    This experience taught me much about embedded software for 
                     wireless/DSP devices and firmware testing using lap equipment.
                 </p>
             </div>
@@ -160,22 +160,22 @@
                     </p>
                 </div>
                 <p  class="job-description">
-                    Under the supervision of Prof. Mina Arashloo, I conducted an experiment to test 
+                    Under the supervision of Prof. Mina Arashloo, I experimented to test 
                     the robustness of network traffic performance.
                     I used network traffic simulations to test the fairness of Linux traffic control 
-                    schedulers, QDiscs (Queuing Disciplines), with a focus on the HHF varient (Heavy-Hitter Filter).<br>
-                    I tested different QDisc configuration's impact on traffic shaping and throughput, 
-                    aiming to better understand the behaviour of such QDisc varient and potentially 
+                    schedulers, QDiscs (Queuing Disciplines), with a focus on the HHF variant (Heavy-Hitter Filter).<br>
+                    I tested different QDisc configurations' impact on traffic shaping and throughput, 
+                    aiming to understand better the behaviour of such QDisc variants and potentially 
                     disrupt a scheduler's fairness scheme.
-                    To achieve this, I designed the traffic flow generation algorithms, and wrote the 
-                    code to setup the experiment.<br>
+                    To achieve this, I designed the traffic flow generation algorithms and wrote the 
+                    code to set up the experiment.<br>
                     The multi-thread program created multiple continuous traffic flows, sending UDP packets 
                     under both light and heavy traffic conditions.
-                    For the same QDisc configuation, I compared the throughput plots for various traffic flow combinations.
+                    For the same QDisc configuration, I compared the throughput plots for various traffic flow combinations.
                     For different QDisc configurations, I compared the average throughput for all flows with the same traffic generator.<br>
                     By comparing these generated plots, I noticed some exception cases with unexpected
-                        flow behaviour under some specific configurations.
-                    Although my research has concluded, the reasons for these exception remain areas for further investigation. 
+                    flow behaviour under some specific configurations.
+                    Although my research has concluded, the reasons for these exceptions remain areas for further investigation. 
                 </p>
             </div>
 
@@ -193,20 +193,20 @@
                 <p class="job-description">
                     I designed a Python test framework for Blackberry Certicom's system-level cryptography library, 
                     to support the application of a safety certification.
-                    The goal of the test framework is to achieve (1) higher code coverage and (2) proof of zero false-negative test cases. <br> 
-                    From the header files, I generated JSON configuration files containing information for all individual functions. 
-                    I then customized the configuration files to include setup and teardown processes for each functions, 
-                    as they are different steps in the entire encryption/decription process. 
+                    The test framework aims to achieve (1) higher code coverage and (2) proof of zero false-negative test cases. <br> 
+                    I generated JSON configuration files from the header files containing information for all individual functions. 
+                    I then customized the configuration files to include setup and teardown processes for each function, 
+                    as they are different steps in the encryption/decryption process. 
                     I integrated this framework into the testware Makefile system, allowing Python to generate the test 
-                    files in C during compilation process. 
-                    These new test files will be executed along with the manually written testware. <br>
-                    For the second goal, I designed a runtime fault injection feature using a statistical approach.
+                    files in C during the compilation process. 
+                    The testware then executes these new test files and the manually written test cases. <br>
+                    I designed a runtime fault injection feature for the second goal using a statistical approach.
                     The user inputs a number for the fault injection percentage, and using macros and an existing random number generator, 
                     the framework decides whether to insert a fault to a test case based on that percentage.
-                    With no false-negative test cases, the detected fault percentage approached the exact same 
-                    percentage as the user input in a long run. <br>
-                    The automated test framework supports the testing of all ECC varient algorithms and SHA256. 
-                    The development is in Linux environment, using Virtual Box.
+                    With no false-negative test cases, the detected fault percentage approached the same 
+                    percentage as the user input in the long run. <br>
+                    The automated test framework supports testing all ECC variant algorithms and SHA256. 
+                    The development is under Linux environment, using Virtual Box.
                 </p>
             </div>
 
@@ -225,11 +225,11 @@
                     During my second term at Microchip, I focused on various C++ dynamic-linked libraries used for chip-flashing, 
                     specifically for the addition of a new device, the Universal Controller (UC), which serves as an intermediate 
                     device between the PC and the Evaluation Board (EVB) connection. <br>
-                    For the Azurite series platforms, I developed a device driver and interface to use the UC to control multiple chip platforms.
-                    This involved adding support for the UC as an intermediary device. Additionally, I addressed external stomer requests 
-                    by revolving DLL bugs for the driver of a prototype chip board.<br>
+                    I developed a device driver and interface for the Azurite series platforms to use the UC to control multiple chip platforms.
+                    That is to say, I added support for the UC as an intermediary device. Additionally, I addressed external customer requests 
+                    by revolving DLL bugs for the driver of a prototype chipboard.<br>
                     I also enhanced chip communication speed in I2C mode by changing from single-byte transmission to multi-byte transmission.
-                    Other tasks included reorganizing the code structure of the DLL library and performing regression tests and verification tests 
+                    Other tasks included reorganizing the DLL library's code structure and performing regression and verification tests 
                     for my modifications. <br>
                     The code was written in C++, and the development environment was Windows.
                 </p>
@@ -247,11 +247,11 @@
                     </p>
                 </div>
                 <p class="job-description">
-                    I developed a Python validation tool for Azurite-series chip platforms.
-                    This involved transitioning from an older TCL tool to Python, which enhanved flexibility in code generation and test automation.
+                    I contributed to a Python validation tool for Azurite-series chip platforms.
+                    My changes involved transitioning from an older TCL tool to Python, which enhanced code generation and test automation flexibility.
                     I imported existing features from the TCL tool and added new ones to support a switch box for managing multiple chip platforms.
-                    Additionally, I reorganized the tool's code structure to be chip-platform-independent, makding future expansions easier.
-                    I also improved the accuracy of measurement methods in oscilloscopes within a Python equipment library. 
+                    As part of the development process, I reorganized the tool's code structure to be chip-platform-independent, a strategic move that makes future expansions and updates much easier.
+                    I also improved the accuracy of oscilloscope measurement methods within a Python equipment library. 
                 </p>
             </div>
 
@@ -269,11 +269,11 @@
                 <p class="job-description">
                     For my first internship, I designed a Python tool to analyze the code coverage of TCL/Tk source code and generate HTML reports 
                     for regression tests, similar to the LCOV tool in GCC.
-                    The tool uses lexer and parsers to analyze and modify source code and process output logs to calculate code coverage. 
-                    I later expanded it to also process Python and Basic code.<br>
+                    The tool uses lexers and parsers to analyze and modify source code and process output logs to calculate code coverage. 
+                    I later expanded it to process Python and Basic code.<br>
                     Using the validation tool, I detected uncovered branches and syntax errors in the source code, 
-                    resulting in the creation of four Jira tickets for source code improvement.
-                    After presenting the tool, it was adopted by multiple QA project groups. <br>
+                    creating four Jira tickets for source code improvement.
+                    After I presented the tool, multiple QA project groups adopted it. <br>
                 </p>
             </div>
 
@@ -304,8 +304,8 @@
                     </p>
                 </div>
                 <p class="job-description">
-                    I designed and developed this personal portfolio website from scratch to showcase my projects, skills, and experience.
-                    This includes custom coding this site layout and features, as well as modelling the backgroud image. For more details 
+                    I designed and developed this personal portfolio website to showcase my projects, skills, and experience.
+                    I started building this website from scratch, which included custom coding of the site layout and features and modelling the background image. For more details 
                     of this city background, you can explore this <a href="docs/gallery.html">gallery</a> tab.
                 </p>
             </div>
@@ -321,8 +321,8 @@
                 <p class="job-description">
                     After completing OpenAI's GPT prompting course, I developed a Python script to filter my school's career website - 
                     WaterlooWorks for job postings that match my interests. Given the account info and website link, the script gathers 
-                    information for each job, processes it, and then use GPT to summarize job descriptions. It generates a table of selected 
-                    jobs with key information such as job requirements, company introductions, and other details, aiding me in my job application process.
+                    information for each job, processes it, and then uses GPT to summarize job descriptions. It generates a table of selected 
+                    jobs with crucial information such as job requirements, company introductions, and other details, aiding my job application process.
                 </p>
             </div>
         </div>
@@ -340,11 +340,10 @@
                     </p>
                 </div>
                 <p class="job-description">
-                    From the term-long course project from the graduate-level Digital Forensics and Incident Response course, I used Kali 
-                    Linux to perform differnet investigations including file forensics of a USB drive, file system forensics and memeory forensics
-                    of two PC. I also used Wireshark to analyze a network capture file, including the inspection of contents of different packets 
+                    From the term-long course project from the graduate-level Digital Forensics and Incident Response course, I used Kali Linux to perform different investigations, including file forensics of a USB drive, file system forensics and memory forensics
+                    of two PCs. I also used Wireshark to analyze a network capture file, including inspecting the contents of different packets 
                     and finding a covert channel from traffic shaping analysis.
-                    This project familiarized me with concepts in digital forensics and network analysis, especially different network protocols
+                    This project familiarized me with concepts in digital forensics and network analysis, especially for different network protocols
                     like SMTP and DNS. 
                 </p>
             </div>
@@ -358,8 +357,8 @@
                     </p>
                 </div>
                 <p class="job-description">
-                    In the Opterating Systems course, I implemented multiple kernel concepts in C, including locks, threads, and paging in a Linux kernel 
-                    inside Docker container. Despite kernel knowledge, I learned a lot about system-level programming, like handling resource sharing
+                    In the Operating Systems course, I implemented multiple kernel concepts in C, including locks, threads, and paging in a Linux kernel 
+                    inside a Docker container. Despite kernel knowledge, I learned much about system-level programming, like handling resource sharing
                     and debugging a multi-threaded program.
                 </p>
             </div>
