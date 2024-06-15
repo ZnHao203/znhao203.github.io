@@ -4,8 +4,23 @@ ul li {
 }
 li.page_nav {
     display: inline-block;
-    margin:5px;
-    border: 2px solid #562313;
+    /* margin:5px; */
+    margin-right:10px;
+    margin-bottom:2px;
+    margin-top:2px;
     padding: 5px;
+    /* border: 2px solid #562313; */
+    border: 2px solid #562313;
+    background-color: #ebe5cfb3;
+}
+
+ul.top_nav {
+    position:fixed;
+    top: 0px;
+    margin:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #ebe5cfb3;
 }

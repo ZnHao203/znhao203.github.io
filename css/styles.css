@@ -53,6 +53,7 @@ img {
     box-sizing: border-box;
     word-wrap: break-word;
     overflow: auto;
+    margin:50px 0;
 }
 .text-block {
     border: 1px solid #562313;
