@@ -13,6 +13,7 @@ p.job-description {
     padding-left: 10px;
     padding-right: 30px;
     padding-bottom: 10px;
+    text-align: left;
 }
 /* Custom scrollbar styles */
 p.job-description::-webkit-scrollbar {

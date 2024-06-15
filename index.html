@@ -151,7 +151,7 @@
                 </p>
             </div>
 
-            <p class="job-description">
+            <!-- <p class="job-description">
                 It's been over a month since I started my internship at Onsemi.
                 During this time, I have directly contributed to the release process 
                 of an SDK package focusing on Bluetooth applications. <br>
@@ -167,6 +167,17 @@
                 The main language I used for development is C, utilizing the Eclipse IDE. 
                 This experience taught me much about embedded software for 
                 wireless/DSP devices and firmware testing using lab equipment.
+            </p> -->
+            <p class="job-description">
+                During my internship at Onsemi, I played a key role in the SDK release 
+                process for an Arm Cortex-M33 based Bluetooth Low Energy wireless MCU.
+                I made code modifications, conducted verification tests for multiple BLE
+                applications across Eclipse, IAR, and Keil IDEs, and resolved over 10
+                non-volatile global flags to prevent compiler issues.<br>
+                I also migrated handler code for 7 BLE applications, including FOTA and
+                RTOS, ensuring seamless functionality and compliance with customer 
+                requiprements. The experience enhanced my C programming skills and provided 
+                valuable insights into embedded software development for wireless/DSL devices.
             </p>
         </div>
 
@@ -182,7 +193,7 @@
                     Network Research, Linux NIC Schedulers, Mininet, UDP, Python
                 </p>
             </div>
-            <p  class="job-description">
+            <!-- <p  class="job-description">
                 Under the supervision of Prof. Mina Arashloo, I experimented to test 
                 the robustness of network traffic performance.
                 I used network traffic simulations to test the fairness of Linux traffic control 
@@ -199,6 +210,21 @@
                 By comparing these generated plots, I noticed some exception cases with unexpected
                 flow behaviour under some specific configurations.
                 Although my research has concluded, the reasons for these exceptions remain areas for further investigation. 
+            </p> -->
+            <p  class="job-description">
+                Under the supervision of Prof. Mina Arashloo, I conducted experiments 
+                to assess the robustness of network traffic performance. Utilizing network 
+                traffic simulations, I analyzed and disrupted the fairness scheme of Linux 
+                traffic control schedulers, specifically focusing on the HHF variant of QDiscs 
+                (Queuing Disciplines). <br>
+                I designed a multi-threaded traffic flow generation algorithm to generate 
+                various flow scenarios and compared throughput plots for different QDisc
+                configurations. Through this evaluation, I aimed to understand the impact 
+                of QDiscs on traffic shaping and identify exceptional flow behavious under 
+                specific configurations.<br>
+                This evaluation revealed exceptional flow behavior under specific configurations,
+                highlighting areas for further investigation in fairness schemes of QDiscs
+                and network traffic management.
             </p>
         </div>
 
@@ -227,7 +253,7 @@
                     QNX, Cryptography, Virtual Box, Linux, System-level C, Python, JSON 
                 </p>
             </div>
-            <p class="job-description">
+            <!-- <p class="job-description">
                 I designed a Python test framework for Blackberry Certicom's system-level cryptography library, 
                 to support the application of a safety certification.
                 The test framework aims to achieve (1) higher code coverage and (2) proof of zero false-negative test cases. <br> 
@@ -244,6 +270,20 @@
                 percentage as the user input in the long run. <br>
                 The automated test framework supports testing all ECC variant algorithms and SHA256. 
                 The development is under Linux environment, using Virtual Box.
+            </p> -->
+            <p class="job-description">
+                I designed a Python-based test framework for Blackberry Certicom's system-level 
+                cryptography library, crucial to obtaining a safety certification.
+                This framework aimed to achieve higher code coverage and zero false-negative 
+                test cases. Utilizing compile-time code generation techniques, I integrated this 
+                framework with the testware Makefile system to generate test files in C.<br>
+                Additionally, I created a runtime fault injection feature using statistical 
+                methods. This feature, based on user-defined fault injection percentages, dynamically
+                inserted faults into test cases, mimicking real-world scenarios. This framework 
+                successfully maintained zero false-negative test cases while achieving fault 
+                detection eates matching user inputs in the long run. <br>
+                With support for testing all ECC variant algorithms and SHA256, this test framework
+                is easily scalable and maintainable.
             </p>
         </div>
 
@@ -260,16 +300,17 @@
                 </p>
             </div>
             <p class="job-description">
-                During my second term at Microchip, I focused on various C++ dynamic-linked libraries used for chip-flashing, 
-                specifically for the addition of a new device, the Universal Controller (UC), which serves as an intermediate 
+                During my second term at Microchip, I focused on various C++ dynamic-linked 
+                libraries used for chip-flashing, specifically for the addition of a new 
+                device, the Universal Controller (UC), which serves as an intermediate 
                 device between the PC and the Evaluation Board (EVB) connection. <br>
-                I developed a device driver and interface for the Azurite series platforms to use the UC to control multiple chip platforms.
-                That is to say, I added support for the UC as an intermediary device. Additionally, I addressed external customer requests 
-                by revolving DLL bugs for the driver of a prototype chipboard.<br>
-                I also enhanced chip communication speed in I2C mode by changing from single-byte transmission to multi-byte transmission.
-                Other tasks included reorganizing the DLL library's code structure and performing regression and verification tests 
-                for my modifications. <br>
-                The code was written in C++, and the development environment was Windows.
+                I developed a device driver and interface for the Azurite series platforms 
+                to use the UC to control multiple chip platforms. Additionally, I addressed 
+                external customer requests by revolving DLL bugs for the driver of a prototype 
+                chipboard.<br>
+                I also enhanced chip communication speed in I2C mode by changing from single-byte 
+                to multi-byte transmission. Other tasks included reorganizing the DLL library's 
+                code structure and performing regression and verification tests for my modifications.
             </p>
         </div>
 
@@ -287,10 +328,14 @@
             </div>
             <p class="job-description">
                 I contributed to a Python validation tool for Azurite-series chip platforms.
-                My changes involved transitioning from an older TCL tool to Python, which enhanced code generation and test automation flexibility.
-                I imported existing features from the TCL tool and added new ones to support a switch box for managing multiple chip platforms.
-                As part of the development process, I reorganized the tool's code structure to be chip-platform-independent, a strategic move that makes future expansions and updates much easier.
-                I also improved the accuracy of oscilloscope measurement methods within a Python equipment library. 
+                My changes involved transitioning from an older TCL tool to Python, which 
+                enhanced code generation and test automation flexibility. I imported existing 
+                features from the TCL tool and added new ones to support a switch box for 
+                managing multiple chip platforms. As part of the development process, I 
+                reorganized the tool's code structure to be chip-platform-independent, a 
+                strategic move that makes future expansions and updates much easier.
+                I also improved the accuracy of oscilloscope measurement methods within a 
+                Python equipment library. 
             </p>
         </div>
 
@@ -307,12 +352,13 @@
                 </p>
             </div>
             <p class="job-description">
-                For my first internship, I designed a Python tool to analyze the code coverage of TCL/Tk source code and generate HTML reports 
-                for regression tests, similar to the LCOV tool in GCC.
-                The tool uses lexers and parsers to analyze and modify source code and process output logs to calculate code coverage. 
-                I later expanded it to process Python and Basic code.<br>
-                Using the validation tool, I detected uncovered branches and syntax errors in the source code, 
-                creating four Jira tickets for source code improvement.
+                For my first internship, I designed a Python tool to analyze the code 
+                coverage of TCL/Tk source code and generate HTML reports for regression 
+                tests, similar to the LCOV tool in GCC. The tool uses lexers and parsers 
+                to analyze and modify source code and process output logs to calculate 
+                code coverage. I later expanded it to process Python and Basic code.<br>
+                Using the validation tool, I detected uncovered branches and syntax errors 
+                in the source code, creating four Jira tickets for source code improvement.
                 After I presented the tool, multiple QA project groups adopted it. <br>
             </p>
         </div>
