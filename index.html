@@ -14,6 +14,8 @@
 </head>
 <body>
 
+<div class="container_12 clearfix">
+<div class="grid_12">
     <nav>
         <ul class="top_nav">
             <li class="page_nav"><a href="#skills">Skills</a></li>
@@ -24,443 +26,516 @@
             <li class="page_nav"><a href="docs/gallery.html">A Little Gallery</a></li>
         </ul>
     </nav>
+</div>
 
-    <div class="intro-outer">
+
+<!--div class="intro-outer" -->
+<div class="grid_10">
+<div class="intro-outer">
+    <!--Temporary construction notice -->
+    <p>
+        Thank you for visiting my website. <br>
+        This website is partially <strong>under construction</strong> right now.  
+        Please be patient while more content is added. 
+    </p>
+    
+    <h1 id="top">Welcome! I'm Zening</h1>
+
+    <!--div class="intro-text"-->
+    
+    <div class="grid_9">
+    <div class="intro-text">
+        
         <p>
-            Thank you for visiting my website. <br>
-            This website is partially <strong>under construction</strong> right now.  
-            Please be patient while more content is added. 
+            I'm a senior Computer Science student at University of Waterloo. 
+            I specialize in Digital Hardware and am passionate about computer security.<br>
+            Currently, I'm working as a firmware developer co-op at Onsemi, 
+            contributing to the latest Bluetooth product development. 
+            My previous internships involve embedded software programming, 
+            system-level cryptography, and computer networking research. <br>
+            I'm open to Co-op for Fall 2024 and will graduate in April 2025.
         </p>
-        <h1 id="top">Welcome! I'm Zening</h1>
+    </div>
+    </div>
 
-        <div class="intro-text">    
-            <p>
-                I'm a senior Computer Science student at University of Waterloo. 
-                I specialize in Digital Hardware and am passionate about computer security.<br>
-                Currently, I'm working as a firmware developer co-op at Onsemi, 
-                contributing to the latest Bluetooth product development. 
-                My previous internships involve embedded software programming, 
-                system-level cryptography, and computer networking research. <br>
-                I'm open to Co-op for Fall 2024 and will graduate in April 2025.
+    <table>
+        <tr>
+            <td class="logo"> 
+                <a href="https://www.linkedin.com/in/zening-hao-1b917522b/" target="_blank">
+                    <img src="img/logos/LI-In-Bug.png" height="40"/>
+                </a> 
+            </td>
+            <td class="logo"> 
+                <a href="https://github.com/ZnHao203"  target="_blank">
+                    <img src="img/logos/github-mark-white.png" height="40"/>
+                </a> 
+            </td>
+            <td class="button"> 
+                <a href="#contact">
+                    <img src="img/buttons/contact.png" height="42"/>
+                </a> 
+            </td>
+            <td class="button"> 
+                <a href="docs/CV.pdf" target="_blank">
+                    <img src="img/buttons/resume.png" height="42"/>
+                </a> 
+            </td> 
+        </tr>
+    </table>
+
+</div>
+</div>
+<div class="clear"></div>
+
+
+<div id="skills">
+    <div  class="grid_10" style="border: 2px solid #562313; margin-top:25px;">
+        <h2>Skills</h2>
+        <div class="skills-text">
+            <p><b>Programming Languages</b></p>
+            <ul>
+                <li>Proficient with work experience: C, C++, Python, Bash, Makefile</li>
+                <li>Familiar with & Knowledge of: CSS, HTML, JavaScript, Java, R, Racket, SQL</li>
+            </ul>
+            <p><b>Development Tools</b></p>
+            <ul>
+                <li>Development under: Linux, Windows, Docker, VirtualBox</li>
+                <li>Version Control: Git, Jenkins, SVN, Bitbucket</li>
+                <li>Concepts & Tools: Agile, Jira, Confluence</li>
+            </ul>
+            <p><b>Others</b></p>
+            <ul>
+                <li>Concepts: computer networks, computer security, cryptography, 
+                    embedded software development, test automation</li>
+                <li>Modelling: SOLIDWORKS, SketchUp, Shapr3D</li>
+            </ul>
+        </div>
+
+    </div>
+    
+</div>
+<div class="clear"></div>
+
+<div id="experience" >
+    <!-- <div id="experience" class="grid_12"> -->
+    
+
+    <div class="grid_12" style="border: 2px solid #562313; margin-top:25px;">
+    <!-- <div class="outer-block"> -->
+    <!-- <div class="outer-block" > -->
+
+        <h2>Past Internship Experience</h2>
+
+        <!-- <div class="job-timeline">
+            <h5>Job Timeline Decending</h5>
+            <ul>
+                <li>2024.5-Present Onsemi</li>
+                <li>2024.3-2024.5 UWaterloo</li>
+                <li>2023.9-2023.12 BlackBerry</li>
+                <li>2023.1-2023.4 Microchip</li>
+                <li>2022.5-2022.8 Microchip</li>
+                <li>2021.7-2021.12 Synopsys</li>
+            </ul>
+        </div> -->
+
+        <!-- <div class="job-block"> -->
+        <div class="grid_5">
+            <div class="job-title">
+                <h3>Firmware Developer Co-op</h3>
+                <h4>
+                    ON Semiconductor, Corp (Onsemi)<br>
+                    2024.5-2024.8
+                </h4>
+                <p class="job-keywords">
+                    Embedded C, Wireless, Bluetooth, FOTA, RTOS, Eclipse
+                </p>
+            </div>
+
+            <p class="job-description">
+                It's been over a month since I started my internship at Onsemi.
+                During this time, I have directly contributed to the release process 
+                of an SDK package focusing on Bluetooth applications. <br>
+                My first Jira ticket involved improving all global flags prone 
+                to issues due to compiler optimization.
+                I then worked on a structural change to move Bluetooth disconnection and
+                pairing handling code from the abstraction layer to the application layer, 
+                as per a customer request. <br>
+                I verified these changes on boards for all existing Bluetooth sample 
+                applications in the SDK package, including FOTA (Firmware-Over-The-Air) 
+                and freeRTOS (ARM's Real Time Operating System).
+                Currently, I'm conducting verification tests for these BLE sample applications. <br>
+                The main language I used for development is C, utilizing the Eclipse IDE. 
+                This experience taught me much about embedded software for 
+                wireless/DSP devices and firmware testing using lab equipment.
             </p>
         </div>
 
-        <table>
-            <tr>
-                <td class="logo"> 
-                    <a href="https://www.linkedin.com/in/zening-hao-1b917522b/" target="_blank">
-                        <img src="img/logos/LI-In-Bug.png" height="40"/>
-                    </a> 
-                </td>
-                <td class="logo"> 
-                    <a href="https://github.com/ZnHao203"  target="_blank">
-                        <img src="img/logos/github-mark-white.png" height="40"/>
-                    </a> 
-                </td>
-                <td class="button"> 
-                    <a href="#contact">
-                        <img src="img/buttons/contact.png" height="42"/>
-                    </a> 
-                </td>
-                <td class="button"> 
-                    <a href="docs/CV.pdf" target="_blank">
-                        <img src="img/buttons/resume.png" height="42"/>
-                    </a> 
-                </td> 
-            </tr>
-        </table>
-    
-    </div>
-
-
-    <div id="skills">
-        <div class="intro-outer">
-            <h2>Skills</h2>
-            <div class="skills-text">
-                <p><b>Programming Languages</b></p>
-                <ul>
-                    <li>Proficient with work experience: C, C++, Python, Bash, Makefile</li>
-                    <li>Familiar with & Knowledge of: CSS, HTML, JavaScript, Java, R, Racket, SQL</li>
-                </ul>
-                <p><b>Development Tools</b></p>
-                <ul>
-                    <li>Development under: Linux, Windows, Docker, VirtualBox</li>
-                    <li>Version Control: Git, Jenkins, SVN, Bitbucket</li>
-                    <li>Concepts & Tools: Agile, Jira, Confluence</li>
-                </ul>
-                <p><b>Others</b></p>
-                <ul>
-                    <li>Concepts: computer networks, computer security, cryptography, 
-                        embedded software development, test automation</li>
-                    <li>Modelling: SOLIDWORKS, SketchUp, Shapr3D</li>
-                </ul>
+        <!-- <div class="job-block"> -->
+        <div class="grid_5">
+            <div class="job-title">
+                <h3>Undergraduate Research Assistant</h3>
+                <h4>
+                    University of Waterloo<br>
+                    2024.3-2024.5
+                </h4>
+                <p class="job-keywords">
+                    Network Research, Linux NIC Schedulers, Mininet, UDP, Python
+                </p>
             </div>
-
+            <p  class="job-description">
+                Under the supervision of Prof. Mina Arashloo, I experimented to test 
+                the robustness of network traffic performance.
+                I used network traffic simulations to test the fairness of Linux traffic control 
+                schedulers, QDiscs (Queuing Disciplines), with a focus on the HHF variant (Heavy-Hitter Filter).<br>
+                I tested different QDisc configurations' impact on traffic shaping and throughput, 
+                aiming to understand better the behaviour of such QDisc variants and potentially 
+                disrupt a scheduler's fairness scheme.
+                To achieve this, I designed the traffic flow generation algorithms and wrote the 
+                code to set up the experiment.<br>
+                The multi-thread program created multiple continuous traffic flows, sending UDP packets 
+                under both light and heavy traffic conditions.
+                For the same QDisc configuration, I compared the throughput plots for various traffic flow combinations.
+                For different QDisc configurations, I compared the average throughput for all flows with the same traffic generator.<br>
+                By comparing these generated plots, I noticed some exception cases with unexpected
+                flow behaviour under some specific configurations.
+                Although my research has concluded, the reasons for these exceptions remain areas for further investigation. 
+            </p>
         </div>
-        
-    </div>
 
-    <div id="experience">
-        <div class="outer-block" >
 
-            <h2>Past Internship Experience</h2>
-
-            <div class="job-timeline">
+        <!-- <div class="grid_3">
                 <h5>Job Timeline Decending</h5>
                 <ul>
-                    <li>2024.5-Present Onsemi</li>
-                    <li>2024.3-2024.5 UWaterloo</li>
-                    <li>2023.9-2023.12 BlackBerry</li>
-                    <li>2023.1-2023.4 Microchip</li>
-                    <li>2022.5-2022.8 Microchip</li>
-                    <li>2021.7-2021.12 Synopsys</li>
-                </ul>
+                    <li>24.5-Present Onsemi</li>
+                    <li>24.3-24.5 UWaterloo</li>
+                    <li>23.9-23.12 BlackBerry</li>
+                    <li>23.1-23.4 Microchip</li>
+                    <li>22.5-22.8 Microchip</li>
+                    <li>21.7-21.12 Synopsys</li>
             </div>
+        </div> -->
 
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>Firmware Developer Co-op</h3>
-                    <h4>
-                        ON Semiconductor, Corp (Onsemi)<br>
-                        2024.5-2024.8
-                    </h4>
-                    <p class="job-keywords">
-                        Embedded C, Wireless, Bluetooth, FOTA, RTOS, Eclipse
-                    </p>
-                </div>
-
-                <p class="job-description">
-                    It's been over a month since I started my internship at Onsemi.
-                    During this time, I have directly contributed to the release process 
-                    of an SDK package focusing on Bluetooth applications. <br>
-                    My first Jira ticket involved improving all global flags prone 
-                    to issues due to compiler optimization.
-                    I then worked on a structural change to move Bluetooth disconnection and
-                    pairing handling code from the abstraction layer to the application layer, 
-                    as per a customer request. <br>
-                    I verified these changes on boards for all existing Bluetooth sample 
-                    applications in the SDK package, including FOTA (Firmware-Over-The-Air) 
-                    and freeRTOS (ARM's Real Time Operating System).
-                    Currently, I'm conducting verification tests for these BLE sample applications. <br>
-                    The main language I used for development is C, utilizing the Eclipse IDE. 
-                    This experience taught me much about embedded software for 
-                    wireless/DSP devices and firmware testing using lab equipment.
+        <div class="grid_5">
+        <!-- <div class="job-block"> -->
+            <div class="job-title">
+                <h3>Systems Software Development Student</h3>
+                <h4>
+                    Blackberry, Ltd.<br>
+                    2023.9-2023.12
+                </h4>
+                <p class="job-keywords">
+                    QNX, Cryptography, Virtual Box, Linux, System-level C, Python, JSON 
                 </p>
             </div>
+            <p class="job-description">
+                I designed a Python test framework for Blackberry Certicom's system-level cryptography library, 
+                to support the application of a safety certification.
+                The test framework aims to achieve (1) higher code coverage and (2) proof of zero false-negative test cases. <br> 
+                I generated JSON configuration files from the header files containing information for all individual functions. 
+                I then customized the configuration files to include setup and teardown processes for each function, 
+                as they are different steps in the encryption/decryption process. 
+                I integrated this framework into the testware Makefile system, allowing Python to generate the test 
+                files in C during the compilation process. 
+                The testware then executes these new test files and the manually written test cases. <br>
+                I designed a runtime fault injection feature for the second goal using a statistical approach.
+                The user inputs a number for the fault injection percentage, and using macros and an existing random number generator, 
+                the framework decides whether to insert a fault to a test case based on that percentage.
+                With no false-negative test cases, the detected fault percentage approached the same 
+                percentage as the user input in the long run. <br>
+                The automated test framework supports testing all ECC variant algorithms and SHA256. 
+                The development is under Linux environment, using Virtual Box.
+            </p>
+        </div>
 
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>Undergraduate Research Assistant</h3>
-                    <h4>
-                        University of Waterloo<br>
-                        2024.3-2024.5
-                    </h4>
-                    <p class="job-keywords">
-                        Network Research, Linux NIC Schedulers, Mininet, UDP, Python
-                    </p>
-                </div>
-                <p  class="job-description">
-                    Under the supervision of Prof. Mina Arashloo, I experimented to test 
-                    the robustness of network traffic performance.
-                    I used network traffic simulations to test the fairness of Linux traffic control 
-                    schedulers, QDiscs (Queuing Disciplines), with a focus on the HHF variant (Heavy-Hitter Filter).<br>
-                    I tested different QDisc configurations' impact on traffic shaping and throughput, 
-                    aiming to understand better the behaviour of such QDisc variants and potentially 
-                    disrupt a scheduler's fairness scheme.
-                    To achieve this, I designed the traffic flow generation algorithms and wrote the 
-                    code to set up the experiment.<br>
-                    The multi-thread program created multiple continuous traffic flows, sending UDP packets 
-                    under both light and heavy traffic conditions.
-                    For the same QDisc configuration, I compared the throughput plots for various traffic flow combinations.
-                    For different QDisc configurations, I compared the average throughput for all flows with the same traffic generator.<br>
-                    By comparing these generated plots, I noticed some exception cases with unexpected
-                    flow behaviour under some specific configurations.
-                    Although my research has concluded, the reasons for these exceptions remain areas for further investigation. 
+        <!-- <div class="job-block"> -->
+        <div class="grid_5">
+            <div class="job-title">
+                <h3>Software/Firmware Engineering Co-op</h3>
+                <h4>
+                    Microchip Technology, Inc.<br>
+                    2023.1-2023.4
+                </h4>
+                <p class="job-keywords">
+                    C++, I2C, Flash Memory Chip, Device Driver Dev, DLL
                 </p>
             </div>
+            <p class="job-description">
+                During my second term at Microchip, I focused on various C++ dynamic-linked libraries used for chip-flashing, 
+                specifically for the addition of a new device, the Universal Controller (UC), which serves as an intermediate 
+                device between the PC and the Evaluation Board (EVB) connection. <br>
+                I developed a device driver and interface for the Azurite series platforms to use the UC to control multiple chip platforms.
+                That is to say, I added support for the UC as an intermediary device. Additionally, I addressed external customer requests 
+                by revolving DLL bugs for the driver of a prototype chipboard.<br>
+                I also enhanced chip communication speed in I2C mode by changing from single-byte transmission to multi-byte transmission.
+                Other tasks included reorganizing the DLL library's code structure and performing regression and verification tests 
+                for my modifications. <br>
+                The code was written in C++, and the development environment was Windows.
+            </p>
+        </div>
 
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>Systems Software Development Student</h3>
-                    <h4>
-                        Blackberry, Ltd.<br>
-                        2023.9-2023.12
-                    </h4>
-                    <p class="job-keywords">
-                        QNX, Cryptography, Virtual Box, Linux, System-level C, Python, JSON 
-                    </p>
-                </div>
-                <p class="job-description">
-                    I designed a Python test framework for Blackberry Certicom's system-level cryptography library, 
-                    to support the application of a safety certification.
-                    The test framework aims to achieve (1) higher code coverage and (2) proof of zero false-negative test cases. <br> 
-                    I generated JSON configuration files from the header files containing information for all individual functions. 
-                    I then customized the configuration files to include setup and teardown processes for each function, 
-                    as they are different steps in the encryption/decryption process. 
-                    I integrated this framework into the testware Makefile system, allowing Python to generate the test 
-                    files in C during the compilation process. 
-                    The testware then executes these new test files and the manually written test cases. <br>
-                    I designed a runtime fault injection feature for the second goal using a statistical approach.
-                    The user inputs a number for the fault injection percentage, and using macros and an existing random number generator, 
-                    the framework decides whether to insert a fault to a test case based on that percentage.
-                    With no false-negative test cases, the detected fault percentage approached the same 
-                    percentage as the user input in the long run. <br>
-                    The automated test framework supports testing all ECC variant algorithms and SHA256. 
-                    The development is under Linux environment, using Virtual Box.
+        <!-- <div class="job-block"> -->
+        <div class="grid_5">
+            <div class="job-title">
+                <h3>Software/Firmware Engineering Co-op</h3>
+                <h4>
+                    Microchip Technology, Inc.<br>
+                    2022.5-2022.8
+                </h4>
+                <p class="job-keywords">
+                    Validation Tool, Python, TCL, Lab Equipment
                 </p>
             </div>
+            <p class="job-description">
+                I contributed to a Python validation tool for Azurite-series chip platforms.
+                My changes involved transitioning from an older TCL tool to Python, which enhanced code generation and test automation flexibility.
+                I imported existing features from the TCL tool and added new ones to support a switch box for managing multiple chip platforms.
+                As part of the development process, I reorganized the tool's code structure to be chip-platform-independent, a strategic move that makes future expansions and updates much easier.
+                I also improved the accuracy of oscilloscope measurement methods within a Python equipment library. 
+            </p>
+        </div>
 
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>Software/Firmware Engineering Co-op</h3>
-                    <h4>
-                        Microchip Technology, Inc.<br>
-                        2023.1-2023.4
-                    </h4>
-                    <p class="job-keywords">
-                        C++, I2C, Flash Memory Chip, Device Driver Dev, DLL
-                    </p>
-                </div>
-                <p class="job-description">
-                    During my second term at Microchip, I focused on various C++ dynamic-linked libraries used for chip-flashing, 
-                    specifically for the addition of a new device, the Universal Controller (UC), which serves as an intermediate 
-                    device between the PC and the Evaluation Board (EVB) connection. <br>
-                    I developed a device driver and interface for the Azurite series platforms to use the UC to control multiple chip platforms.
-                    That is to say, I added support for the UC as an intermediary device. Additionally, I addressed external customer requests 
-                    by revolving DLL bugs for the driver of a prototype chipboard.<br>
-                    I also enhanced chip communication speed in I2C mode by changing from single-byte transmission to multi-byte transmission.
-                    Other tasks included reorganizing the DLL library's code structure and performing regression and verification tests 
-                    for my modifications. <br>
-                    The code was written in C++, and the development environment was Windows.
+        <!-- <div class="job-block"> -->
+        <div class="grid_5">
+            <div class="job-title">
+                <h3>Technical Intern</h3>
+                <h4>
+                    Synopsys, Inc.<br>
+                    2021.7-2021.12
+                </h4>
+                <p class="job-keywords">
+                    QA Coverage Tool, Python, TCL/Tk, Lexer & Parser, LCOV
                 </p>
             </div>
+            <p class="job-description">
+                For my first internship, I designed a Python tool to analyze the code coverage of TCL/Tk source code and generate HTML reports 
+                for regression tests, similar to the LCOV tool in GCC.
+                The tool uses lexers and parsers to analyze and modify source code and process output logs to calculate code coverage. 
+                I later expanded it to process Python and Basic code.<br>
+                Using the validation tool, I detected uncovered branches and syntax errors in the source code, 
+                creating four Jira tickets for source code improvement.
+                After I presented the tool, multiple QA project groups adopted it. <br>
+            </p>
+        </div>
 
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>Software/Firmware Engineering Co-op</h3>
-                    <h4>
-                        Microchip Technology, Inc.<br>
-                        2022.5-2022.8
-                    </h4>
-                    <p class="job-keywords">
-                        Validation Tool, Python, TCL, Lab Equipment
-                    </p>
-                </div>
-                <p class="job-description">
-                    I contributed to a Python validation tool for Azurite-series chip platforms.
-                    My changes involved transitioning from an older TCL tool to Python, which enhanced code generation and test automation flexibility.
-                    I imported existing features from the TCL tool and added new ones to support a switch box for managing multiple chip platforms.
-                    As part of the development process, I reorganized the tool's code structure to be chip-platform-independent, a strategic move that makes future expansions and updates much easier.
-                    I also improved the accuracy of oscilloscope measurement methods within a Python equipment library. 
+        
+    <!-- </div> -->
+    </div>
+
+    <!-- <div class="grid_3">
+            <h5>Job Timeline Decending</h5>
+            <ul>
+                <li>2024.5-Present Onsemi</li>
+                <li>2024.3-2024.5 UWaterloo</li>
+                <li>2023.9-2023.12 BlackBerry</li>
+                <li>2023.1-2023.4 Microchip</li>
+                <li>2022.5-2022.8 Microchip</li>
+                <li>2021.7-2021.12 Synopsys</li>
+        </div>
+    </div> -->
+    
+</div>
+
+<div class="clear"></div>
+
+<div id="projects">
+    <!-- <div class="outer-block"> -->
+    <div class="grid_11" style="border: 2px solid #562313; margin-top:25px;">
+        <h2>Personal Projects</h2>
+
+        <!-- <div class="job-timeline">
+            <h5>Project Timeline Decending</h5>
+            <ul>
+                <li>2024.6-Present This Website</li>
+                <li>2024.1-2024.4 CS798</li>
+                <li>2023.4-2023.5 Website Scraper</li>
+                <li>2022.9-2022.12 CS350</li>
+            </ul>
+        </div> -->
+        
+        <!-- <div class="job-block"> -->
+        <div class="grid_5">
+            <div class="job-title">
+                <h3>Personal Portfolio Website</h3>
+                <h4>2024.6-Present</h4>
+                <p class="job-keywords">
+                    Website from Scratch, HTML, CSS, Shapr3D, SketchUp
                 </p>
             </div>
+            <p class="job-description">
+                I designed and developed this personal portfolio website to showcase my projects, skills, and experience.
+                I started building this website from scratch, which included custom coding of the site layout and features and modelling the background image. For more details 
+                of this city background, you can explore this <a href="docs/gallery.html">gallery</a> tab.
+            </p>
+        </div>
 
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>Technical Intern</h3>
-                    <h4>
-                        Synopsys, Inc.<br>
-                        2021.7-2021.12
-                    </h4>
-                    <p class="job-keywords">
-                        QA Coverage Tool, Python, TCL/Tk, Lexer & Parser, LCOV
-                    </p>
-                </div>
-                <p class="job-description">
-                    For my first internship, I designed a Python tool to analyze the code coverage of TCL/Tk source code and generate HTML reports 
-                    for regression tests, similar to the LCOV tool in GCC.
-                    The tool uses lexers and parsers to analyze and modify source code and process output logs to calculate code coverage. 
-                    I later expanded it to process Python and Basic code.<br>
-                    Using the validation tool, I detected uncovered branches and syntax errors in the source code, 
-                    creating four Jira tickets for source code improvement.
-                    After I presented the tool, multiple QA project groups adopted it. <br>
+        <div class="grid_5">
+        <!-- <div class="job-block"> -->
+            <div class="job-title">
+                <h3>Job Filter for WaterlooWorks</h3>
+                <h4>2023.4-2023.5</h4>
+                <p class="job-keywords">
+                    OpanAI GPT, Prompt Engineering, Website Scraper, Python
                 </p>
             </div>
-
-            
+            <p class="job-description">
+                After completing OpenAI's GPT prompting course, I developed a Python script to filter my school's career website - 
+                WaterlooWorks for job postings that match my interests. Given the account info and website link, the script gathers 
+                information for each job, processes it, and then uses GPT to summarize job descriptions. It generates a table of selected 
+                jobs with crucial information such as job requirements, company introductions, and other details, aiding my job application process.
+            </p>
         </div>
     </div>
 
-    <div id="projects">
-        <div class="outer-block">
-            <h2>Personal Projects</h2>
+    <div class="grid_11" style="border: 2px solid #562313;margin-top:25px;">
+    <!-- <div class="outer-block" > -->
 
-            <div class="job-timeline">
-                <h5>Project Timeline Decending</h5>
-                <ul>
-                    <li>2024.6-Present This Website</li>
-                    <li>2024.1-2024.4 CS798</li>
-                    <li>2023.4-2023.5 Website Scraper</li>
-                    <li>2022.9-2022.12 CS350</li>
-                </ul>
-            </div>
-            
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>Personal Portfolio Website</h3>
-                    <h4>2024.6-Present</h4>
-                    <p class="job-keywords">
-                        Website from Scratch, HTML, CSS, Shapr3D, SketchUp
-                    </p>
-                </div>
-                <p class="job-description">
-                    I designed and developed this personal portfolio website to showcase my projects, skills, and experience.
-                    I started building this website from scratch, which included custom coding of the site layout and features and modelling the background image. For more details 
-                    of this city background, you can explore this <a href="docs/gallery.html">gallery</a> tab.
+        <h2>Revelant Assignments</h2>
+
+        <div class="grid_5">
+        <!-- <div class="job-block"> -->
+            <div class="job-title">
+                <h3>CS798 Course Project: Digital Forensics Tools and Application</h3>
+                <h4>2024.1-2024.4</h4>
+                <p class="job-keywords">
+                    Kali Linux, Wireshark, Malware Analysis, Memory & File System Inspection
                 </p>
             </div>
-
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>Job Filter for WaterlooWorks</h3>
-                    <h4>2023.4-2023.5</h4>
-                    <p class="job-keywords">
-                        OpanAI GPT, Prompt Engineering, Website Scraper, Python
-                    </p>
-                </div>
-                <p class="job-description">
-                    After completing OpenAI's GPT prompting course, I developed a Python script to filter my school's career website - 
-                    WaterlooWorks for job postings that match my interests. Given the account info and website link, the script gathers 
-                    information for each job, processes it, and then uses GPT to summarize job descriptions. It generates a table of selected 
-                    jobs with crucial information such as job requirements, company introductions, and other details, aiding my job application process.
-                </p>
-            </div>
+            <p class="job-description">
+                From the term-long course project from the graduate-level Digital Forensics and Incident Response course, I used Kali Linux to perform different investigations, including file forensics of a USB drive, file system forensics and memory forensics
+                of two PCs. I also used Wireshark to analyze a network capture file, including inspecting the contents of different packets 
+                and finding a covert channel from traffic shaping analysis.
+                This project familiarized me with concepts in digital forensics and network analysis, especially for different network protocols
+                like SMTP and DNS. 
+            </p>
         </div>
 
-        <div class="outer-block" >
-
-            <h2>Revelant Assignments</h2>
-
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>CS798 Course Project: Digital Forensics Tools and Application</h3>
-                    <h4>2024.1-2024.4</h4>
-                    <p class="job-keywords">
-                        Kali Linux, Wireshark, Malware Analysis, Memory & File System Inspection
-                    </p>
-                </div>
-                <p class="job-description">
-                    From the term-long course project from the graduate-level Digital Forensics and Incident Response course, I used Kali Linux to perform different investigations, including file forensics of a USB drive, file system forensics and memory forensics
-                    of two PCs. I also used Wireshark to analyze a network capture file, including inspecting the contents of different packets 
-                    and finding a covert channel from traffic shaping analysis.
-                    This project familiarized me with concepts in digital forensics and network analysis, especially for different network protocols
-                    like SMTP and DNS. 
+        <div class="grid_5">
+        <!-- <div class="job-block"> -->
+            <div class="job-title">
+                <h3>CS350 Course Assignment: Kernal Bugfix in Docker Containers</h3>
+                <h4>2022.9-2022.12</h4>
+                <p class="job-keywords">
+                    OS, Linux Kernel, Docker Container, Multi-Threading, C
                 </p>
             </div>
-
-            <div class="job-block">
-                <div class="job-title">
-                    <h3>CS350 Course Assignment: Kernal Bugfix in Docker Containers</h3>
-                    <h4>2022.9-2022.12</h4>
-                    <p class="job-keywords">
-                        OS, Linux Kernel, Docker Container, Multi-Threading, C
-                    </p>
-                </div>
-                <p class="job-description">
-                    In the Operating Systems course, I implemented multiple kernel concepts in C, including locks, threads, and paging in a Linux kernel 
-                    inside a Docker container. Despite kernel knowledge, I learned much about system-level programming, like handling resource sharing
-                    and debugging a multi-threaded program.
-                </p>
-            </div>
+            <p class="job-description">
+                In the Operating Systems course, I implemented multiple kernel concepts in C, including locks, threads, and paging in a Linux kernel 
+                inside a Docker container. Despite kernel knowledge, I learned much about system-level programming, like handling resource sharing
+                and debugging a multi-threaded program.
+            </p>
         </div>
     </div>
+</div>
 
+<div class="clear"></div>
 
-    <div id="academics">
-        <div class="outer-block">
-            <h2>Academic Profile </h2>
+<div id="academics">
+    <div class="grid_10" style="border: 2px solid #562313; margin-top:25px;">
+    <!-- <div class="outer-block"> -->
+        <h2>Academic Profile </h2>
 
-            <div class="text-block">
-                <h3>Program</h3>
-                <p style="font-size:12pt;">
-                    <b>University of Waterloo</b> <br>
-                    Candidate for Bachelor of Computer Science <br>
-                    Honours, Co-op Program, Digital Hardware Speicialization <br>
-                    2020.9-2025.4 (Expected)
-                </p> 
+        <!-- <div class="text-block"> -->
+        <div class="grid_8" style="border: 2px solid #562313">
+            <h3>Program</h3>
+            <p style="font-size:12pt;">
+                <b>University of Waterloo</b> <br>
+                Candidate for Bachelor of Computer Science <br>
+                Honours, Co-op Program, Digital Hardware Speicialization <br>
+                2020.9-2025.4 (Expected)
+            </p> 
 
-                <h3>Awards</h3>
-                <p>
-                    <b>Academic Standing:</b> Excellent Standing (Highest)<br>
-                    <b>Awards:</b> Recipent of $2000 University of Waterloo President's Scholarship of Distinction (2021)<br>
-                    <b>Term Distinction Honours:</b> Winter 2021, Winter 2022, Winter 2023, Spring 2023, 
-                    Fall 2023, Winter 2024<br>
-                </p>
-
-                <h3>Courses</h3>
-                <div class="course-column" style="float:left">
-                    <h3>From University</h3>
-                    <ul>
-                        <li>Operating Systems</li>
-                        <li>Computer Networks</li> 
-                        <li>Microprocessors</li>
-                        <li>Software Security<br> & System Security</li>
-                        <li>Digital Forensics <br> & Incident Response </li>
-                        <li>Digital Hardware</li>
-                    </ul>
-                </div>
-                <div class="course-column">
-                    <h3>From Coursera</h3>
-                    <p style="text-align: left;">
-                        <b>Machine Learning - Octave Programming </b> <br>
-                        (2020.9-2021.1):
-                        <a href="https://www.coursera.org/account/accomplishments/verify/CW4JNFW479V6" target="_blank">(Certificate)</a><br> 
-                        Completed Octave projects, applied concepts of logistic regression, support vector machine, neural networks
-                        <br>
-                        <b>Data Analysis with Python - Python & MySQL Programming </b> <br>
-                        (2021.1-2021.2): 
-                        <a href="https://www.coursera.org/account/accomplishments/verify/MDQ6NPN57N5H" target="_blank">(Certificate)</a>  <br>
-                        Utilized Pandas, Numpy, and Scipy libraries to process and visualize data
-                        
-                    </p>
-                </div>
-
-            </div>
+            <h3>Awards</h3>
+            <p>
+                <b>Academic Standing:</b> Excellent Standing (Highest)<br>
+                <b>Awards:</b> Recipent of $2000 University of Waterloo President's Scholarship of Distinction (2021)<br>
+                <b>Term Distinction Honours:</b> Winter 2021, Winter 2022, Winter 2023, Spring 2023, 
+                Fall 2023, Winter 2024<br>
+            </p>
+            <h3>Courses</h3>
         </div>
+        <!-- <div class="grid_10" style="border: 2px solid #562313; padding:0; margin:0;"> -->
+        <div class="clear"></div>
+    
+        <div class="grid_3" style="border: 2px solid #562313">
+            <h3>From University</h3>
+            <ul>
+                <li>Operating Systems</li>
+                <li>Computer Networks</li> 
+                <li>Microprocessors</li>
+                <li>Software Security<br> & System Security</li>
+                <li>Digital Forensics <br> & Incident Response </li>
+                <li>Digital Hardware</li>
+            </ul>
+        </div>
+        <div class="grid_6" style="border: 2px solid #562313">
+            <h3>From Coursera</h3>
+            <p style="text-align: left;">
+                <b>Machine Learning - Octave Programming </b> <br>
+                (2020.9-2021.1):
+                <a href="https://www.coursera.org/account/accomplishments/verify/CW4JNFW479V6" target="_blank">(Certificate)</a><br> 
+                Completed Octave projects, applied concepts of logistic regression, support vector machine, neural networks
+                <br>
+                <b>Data Analysis with Python - Python & MySQL Programming </b> <br>
+                (2021.1-2021.2): 
+                <a href="https://www.coursera.org/account/accomplishments/verify/MDQ6NPN57N5H" target="_blank">(Certificate)</a>  <br>
+                Utilized Pandas, Numpy, and Scipy libraries to process and visualize data
+                
+            </p>
+        </div>
+
+        <!-- </div> -->
     </div>
+</div>
     
 
-    <div id="contact">
-        <div class="intro-outer" >
+<div id="contact">
+    <div class="grid_10" style="border: 2px solid #562313; margin-top:25px;">
+    <!-- <div class="intro-outer" > -->
 
-            <h2>Stay Connected! </h2>
-            <div class="contact-text">
-                <p>
-                    Feel free to checkout the following websites or email me if you have any questions! <br>
-                    Phone: +1(647)293-4273
-                </p>
-            </div>
-                <table>
-                    <tr>
-                        <td class="logo"> 
-                            <a href="https://www.linkedin.com/in/zening-hao-1b917522b/" target="_blank">
-                                <img src="img/logos/LI-In-Bug.png" height="40"/>
-                            </a> 
-                        </td>
-                        <td class="logo">  
-                            <a href="https://github.com/ZnHao203"  target="_blank">
-                                <img src="img/logos/github-mark-white.png" height="40"/>
-                            </a> 
-                        </td>
-                        <td class="button">  
-                            <a href="mailto:z23hao@uwaterloo.ca">
-                                <img src="img/buttons/emailme.png" height="42"/>
-                            </a> 
-                        </td>
-                        <td class="button"> 
-                            <a href="docs/CV.pdf" target="_blank">
-                                <img src="img/buttons/resume.png" height="42"/>
-                            </a> 
-                        </td>
-                        
-                    </tr>
-                </table>
-            
-        </div> 
+        <h2>Stay Connected! </h2>
+        <div class="grid_8" style="border: 2px solid #562313;margin:25px 0;">
+            <p>
+                Feel free to checkout the following websites or email me if you have any questions! <br>
+                Phone: +1(647)293-4273
+            </p>
+        </div>
+            <table>
+                <tr>
+                    <td class="logo"> 
+                        <a href="https://www.linkedin.com/in/zening-hao-1b917522b/" target="_blank">
+                            <img src="img/logos/LI-In-Bug.png" height="40"/>
+                        </a> 
+                    </td>
+                    <td class="logo">  
+                        <a href="https://github.com/ZnHao203"  target="_blank">
+                            <img src="img/logos/github-mark-white.png" height="40"/>
+                        </a> 
+                    </td>
+                    <td class="button">  
+                        <a href="mailto:z23hao@uwaterloo.ca">
+                            <img src="img/buttons/emailme.png" height="42"/>
+                        </a> 
+                    </td>
+                    <td class="button"> 
+                        <a href="docs/CV.pdf" target="_blank">
+                            <img src="img/buttons/resume.png" height="42"/>
+                        </a> 
+                    </td>
+                    
+                </tr>
+            </table>
+        
     </div> 
+</div> 
 
+<div class="clear"></div>
+<div class="grid_2">
     <p class="button-top"><a href="#top">Return To Top</a></p>
+</div>
 
-    <img class="bg" src="img/IMG_27381.PNG" alt="">
+</div>
+
+<img class="bg" src="img/IMG_27381.PNG" alt="">
+
 </body>
 </html>

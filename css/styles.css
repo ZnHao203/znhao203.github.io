@@ -46,7 +46,7 @@ img {
 }
 .outer-block {
     border: 2px solid #562313;
-    padding: 10px;
+    /* padding: 10px; */
     background:hsla(16, 15%, 69%, 0.1);
     /* max-width: 900px; */
     width: fit-content;
