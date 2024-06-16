@@ -5,6 +5,7 @@
     <title>zening-home-page</title>
     <link rel="stylesheet" type="text/css" media="all" href="css/960.css" />
     <link href="css/background.css" type="text/css" rel="stylesheet" />
+    <link href="css/boxes.css" type="text/css" rel="stylesheet" />
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <link href="css/table.css" type="text/css" rel="stylesheet" />
     <link href="css/job-styles.css" type="text/css" rel="stylesheet" />
@@ -30,8 +31,7 @@
 
 
 <!--div class="intro-outer" -->
-<div class="grid_10">
-<div class="intro-outer">
+<div class="grid_10 outer_box intro">
     <!--Temporary construction notice -->
     <p>
         Thank you for visiting my website. <br>
@@ -43,8 +43,7 @@
 
     <!--div class="intro-text"-->
     
-    <div class="grid_9">
-    <div class="intro-text">
+    <div class="grid_9  inner_box intro">
         
         <p>
             I'm a senior Computer Science student at University of Waterloo. 
@@ -55,7 +54,6 @@
             system-level cryptography, and computer networking research. <br>
             I'm open to Co-op for Fall 2024 and will graduate in April 2025.
         </p>
-    </div>
     </div>
 
     <table>
@@ -84,15 +82,14 @@
     </table>
 
 </div>
-</div>
+
 <div class="clear"></div>
 
 
 <div id="skills">
-    <div  class="grid_10" style="border: 2px solid #562313; margin-top:25px;">
+    <div  class="grid_10 outer_box">
         <h2>Skills</h2>
-        <div class="grid_9">
-        <div class="skills-text">
+        <div class="grid_9 inner_box skills">
             <p><b>Programming Languages</b></p>
             <ul>
                 <li>Proficient with work experience: C, C++, Python, Bash, Makefile</li>
@@ -120,18 +117,18 @@
             </ul>
             
         </div>
-        </div>
 
     </div>
     
 </div>
 <div class="clear"></div>
 
-<div id="experience" >
+<div id="experience" class="grid_11 outer_box projects">
     <!-- <div id="experience" class="grid_12"> -->
     
 
-    <div class="grid_11" style="border: 2px solid #562313; margin-top:25px;">
+    <!-- <div class="grid_11 outer_box projects"> -->
+    <div class="inner_box projects wrapper_colored">
     <!-- <div class="outer-block"> -->
     <!-- <div class="outer-block" > -->
 
@@ -151,7 +148,7 @@
         </div> -->
 
         <!-- <div class="job-block"> -->
-        <div class="grid_5" >
+        <div class="grid_5 inner_box projects" >
             <div class="job-title">
                 <h3>Firmware Developer Intern</h3>
                 <h4>
@@ -199,7 +196,7 @@
         </div>
 
         <!-- <div class="job-block"> -->
-        <div class="grid_5">
+        <div class="grid_5 inner_box projects">
             <div class="job-title">
                 <h3>Undergraduate Research Assistant</h3>
                 <h4>
@@ -248,22 +245,10 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="clear"></div>
-
-        <!-- <div class="grid_3">
-                <h5>Job Timeline Decending</h5>
-                <ul>
-                    <li>24.5-Present Onsemi</li>
-                    <li>24.3-24.5 UWaterloo</li>
-                    <li>23.9-23.12 BlackBerry</li>
-                    <li>23.1-23.4 Microchip</li>
-                    <li>22.5-22.8 Microchip</li>
-                    <li>21.7-21.12 Synopsys</li>
-            </div>
-        </div> -->
-
-        <div class="grid_5">
+    
+        <div class="grid_5 inner_box projects">
         <!-- <div class="job-block"> -->
             <div class="job-title">
                 <h3>Systems Software Developer Intern</h3>
@@ -315,7 +300,7 @@
         </div>
 
         <!-- <div class="job-block"> -->
-        <div class="grid_5">
+        <div class="grid_5 inner_box projects">
             <div class="job-title">
                 <h3>Software/Firmware Engineer Intern</h3>
                 <h4>
@@ -348,7 +333,7 @@
         <div class="clear"></div>
 
         <!-- <div class="job-block"> -->
-        <div class="grid_5">
+        <div class="grid_5 inner_box projects">
             <div class="job-title">
                 <h3>Software/Firmware Engineer Intern</h3>
                 <h4>
@@ -378,7 +363,7 @@
         </div>
 
         <!-- <div class="job-block"> -->
-        <div class="grid_5">
+        <div class="grid_5 inner_box projects">
             <div class="job-title">
                 <h3>Technical Intern (QA Tools)</h3>
                 <h4>
@@ -407,21 +392,12 @@
             
         </div>
 
-        
+        <div class="clear"></div>
+    </div>   
     <!-- </div> -->
-    </div>
+    <!-- </div> -->
+    
 
-    <!-- <div class="grid_3">
-            <h5>Job Timeline Decending</h5>
-            <ul>
-                <li>2024.5-Present Onsemi</li>
-                <li>2024.3-2024.5 UWaterloo</li>
-                <li>2023.9-2023.12 BlackBerry</li>
-                <li>2023.1-2023.4 Microchip</li>
-                <li>2022.5-2022.8 Microchip</li>
-                <li>2021.7-2021.12 Synopsys</li>
-        </div>
-    </div> -->
     
 </div>
 
@@ -429,108 +405,118 @@
 
 <div id="projects">
     <!-- <div class="outer-block"> -->
-    <div class="grid_11" style="border: 2px solid #562313; margin-top:25px;">
-        <h2>Personal Projects</h2>
-        <p><i>(Click to expand)</i></p>
+    <div class="grid_11 outer_box projects">
+        <div class="inner_box projects wrapper_colored">
+            <h2>Personal Projects</h2>
+            <p><i>(Click to expand)</i></p>
 
-        <!-- <div class="job-timeline">
-            <h5>Project Timeline Decending</h5>
-            <ul>
-                <li>2024.6-Present This Website</li>
-                <li>2024.1-2024.4 CS798</li>
-                <li>2023.4-2023.5 Website Scraper</li>
-                <li>2022.9-2022.12 CS350</li>
-            </ul>
-        </div> -->
-        
-        <!-- <div class="job-block"> -->
-        <div class="grid_5">
-            <div class="job-title">
-                <h3>Personal Portfolio Website</h3>
-                <h4>2024.6-Present</h4>
-                <p class="job-keywords">
-                    Website from Scratch, HTML, CSS, Shapr3D, SketchUp
-                </p>
-            </div>
-            <div class="experience-description" onclick="toggleExpand(this)" >
-                <div class="experience-content">
-                    <p>
-                        I designed and developed this personal portfolio website to showcase my projects, skills, and experience.
-                        I started building this website from scratch, which included custom coding of the site layout and features and modelling the background image. For more details 
-                        of this city background, you can explore this <a href="docs/gallery.html">gallery</a> tab.
+            <!-- <div class="job-timeline">
+                <h5>Project Timeline Decending</h5>
+                <ul>
+                    <li>2024.6-Present This Website</li>
+                    <li>2024.1-2024.4 CS798</li>
+                    <li>2023.4-2023.5 Website Scraper</li>
+                    <li>2022.9-2022.12 CS350</li>
+                </ul>
+            </div> -->
+            
+            <!-- <div class="job-block"> -->
+            <div class="grid_5 inner_box projects">
+                <div class="job-title">
+                    <h3>Personal Portfolio Website</h3>
+                    <h4>2024.6-Present</h4>
+                    <p class="job-keywords">
+                        Website from Scratch, HTML, CSS, Shapr3D, SketchUp
                     </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="grid_5">
-        <!-- <div class="job-block"> -->
-            <div class="job-title">
-                <h3>Job Filter for WaterlooWorks</h3>
-                <h4>2023.4-2023.5</h4>
-                <p class="job-keywords">
-                    OpanAI GPT, Prompt Engineering, Website Scraper, Python
-                </p>
-            </div>
-            <div class="experience-description" onclick="toggleExpand(this)" >
-                <div class="experience-content">
-                    <p>
-                        After completing OpenAI's GPT prompting course, I developed a Python script to filter my school's career website - 
-                        WaterlooWorks for job postings that match my interests. Given the account info and website link, the script gathers 
-                        information for each job, processes it, and then uses GPT to summarize job descriptions. It generates a table of selected 
-                        jobs with crucial information such as job requirements, company introductions, and other details, aiding my job application process.
-                    </p>
+                <div class="experience-description" onclick="toggleExpand(this)" >
+                    <div class="experience-content">
+                        <p>
+                            I designed and developed this personal portfolio website to showcase my projects, skills, and experience.
+                            I started building this website from scratch, which included custom coding of the site layout and features and modelling the background image. For more details 
+                            of this city background, you can explore this <a href="docs/gallery.html">gallery</a> tab.
+                        </p>
+                    </div>
                 </div>
             </div>
+
+            <div class="grid_5 inner_box projects">
+            <!-- <div class="job-block"> -->
+                <div class="job-title">
+                    <h3>Job Filter for WaterlooWorks</h3>
+                    <h4>2023.4-2023.5</h4>
+                    <p class="job-keywords">
+                        OpanAI GPT, Prompt Engineering, Website Scraper, Python
+                    </p>
+                </div>
+                <div class="experience-description" onclick="toggleExpand(this)" >
+                    <div class="experience-content">
+                        <p>
+                            After completing OpenAI's GPT prompting course, I developed a Python script to filter my school's career website - 
+                            WaterlooWorks for job postings that match my interests. Given the account info and website link, the script gathers 
+                            information for each job, processes it, and then uses GPT to summarize job descriptions. It generates a table of selected 
+                            jobs with crucial information such as job requirements, company introductions, and other details, aiding my job application process.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
         </div>
     </div>
 
-    <div class="grid_11" style="border: 2px solid #562313;margin-top:25px;">
+    <div class="grid_11 outer_box projects">
     <!-- <div class="outer-block" > -->
+        <div class="inner_box projects wrapper_colored">
 
-        <h2>Revelant Assignments</h2>
-        <p><i>(Click to expand)</i></p>
+            <h2>Revelant Assignments</h2>
+            <p><i>(Click to expand)</i></p>
 
-        <div class="grid_5">
-        <!-- <div class="job-block"> -->
-            <div class="job-title">
-                <h3>CS798 Course Project: Digital Forensics Tools and Application</h3>
-                <h4>2024.1-2024.4</h4>
-                <p class="job-keywords">
-                    Kali Linux, Wireshark, Malware Analysis, Memory & File System Inspection
-                </p>
-            </div>
-            <div class="experience-description" onclick="toggleExpand(this)" >
-                <div class="experience-content">
-                    <p>
-                        From the term-long course project from the graduate-level Digital Forensics and Incident Response course, I used Kali Linux to perform different investigations, including file forensics of a USB drive, file system forensics and memory forensics
-                        of two PCs. I also used Wireshark to analyze a network capture file, including inspecting the contents of different packets 
-                        and finding a covert channel from traffic shaping analysis.
-                        This project familiarized me with concepts in digital forensics and network analysis, especially for different network protocols
-                        like SMTP and DNS. 
+            <div class="grid_5 inner_box projects">
+            <!-- <div class="job-block"> -->
+                <div class="job-title">
+                    <h3>CS798 Course Project: Digital Forensics Tools and Application</h3>
+                    <h4>2024.1-2024.4</h4>
+                    <p class="job-keywords">
+                        Kali Linux, Wireshark, Malware Analysis, Memory & File System Inspection
                     </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="grid_5">
-        <!-- <div class="job-block"> -->
-            <div class="job-title">
-                <h3>CS350 Course Assignment: Kernal Bugfix in Docker Containers</h3>
-                <h4>2022.9-2022.12</h4>
-                <p class="job-keywords">
-                    OS, Linux Kernel, Docker Container, Multi-Threading, C
-                </p>
-            </div>
-            <div class="experience-description" onclick="toggleExpand(this)" >
-                <div class="experience-content">
-                    <p>
-                        In the Operating Systems course, I implemented multiple kernel concepts in C, including locks, threads, and paging in a Linux kernel 
-                        inside a Docker container. Despite kernel knowledge, I learned much about system-level programming, like handling resource sharing
-                        and debugging a multi-threaded program.
-                    </p>
+                <div class="experience-description" onclick="toggleExpand(this)" >
+                    <div class="experience-content">
+                        <p>
+                            From the term-long course project from the graduate-level Digital Forensics and Incident Response course, I used Kali Linux to perform different investigations, including file forensics of a USB drive, file system forensics and memory forensics
+                            of two PCs. I also used Wireshark to analyze a network capture file, including inspecting the contents of different packets 
+                            and finding a covert channel from traffic shaping analysis.
+                            This project familiarized me with concepts in digital forensics and network analysis, especially for different network protocols
+                            like SMTP and DNS. 
+                        </p>
+                    </div>
                 </div>
             </div>
+        
+
+            <div class="grid_5 inner_box projects">
+            <!-- <div class="job-block"> -->
+                <div class="job-title">
+                    <h3>CS350 Course Assignment: Kernal Bugfix in Docker Containers</h3>
+                    <h4>2022.9-2022.12</h4>
+                    <p class="job-keywords">
+                        OS, Linux Kernel, Docker Container, Multi-Threading, C
+                    </p>
+                </div>
+                <div class="experience-description" onclick="toggleExpand(this)" >
+                    <div class="experience-content">
+                        <p>
+                            In the Operating Systems course, I implemented multiple kernel concepts in C, including locks, threads, and paging in a Linux kernel 
+                            inside a Docker container. Despite kernel knowledge, I learned much about system-level programming, like handling resource sharing
+                            and debugging a multi-threaded program.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
         </div>
     </div>
 </div>
@@ -538,12 +524,12 @@
 <div class="clear"></div>
 
 <div id="academics">
-    <div class="grid_10" style="border: 2px solid #562313; margin-top:25px;">
+    <div class="grid_10 outer_box">
     <!-- <div class="outer-block"> -->
         <h2>Academic Profile </h2>
 
         <!-- <div class="text-block"> -->
-        <div class="grid_9" style="border: 2px solid #562313">
+        <div class="grid_9 inner_box academic upper">
             <h3>Program</h3>
             <p style="font-size:12pt;">
                 <b>University of Waterloo</b> <br>
@@ -564,7 +550,7 @@
         <!-- <div class="grid_10" style="border: 2px solid #562313; padding:0; margin:0;"> -->
         <div class="clear"></div>
     
-        <div class="grid_3" style="border: 2px solid #562313; margin-right: 5px;">
+        <div class="grid_3 inner_box academic lowerleft">
             <h3>From University</h3>
             <ul style="font-family: Arial, Helvetica, sans-serif;font-size: 14px; padding-left:12px;">
                 <li >Operating Systems</li>
@@ -575,7 +561,7 @@
                 <li>Digital Hardware</li>
             </ul>
         </div>
-        <div class="grid_6" style="border: 2px solid #562313">
+        <div class="grid_6 inner_box">
             <h3>From Coursera</h3>
             <ul style="font-family: Arial, Helvetica, sans-serif;font-size: 14px; padding-left:12px;">
                 <li><b>Machine Learning - Octave Programming </b> 
@@ -598,11 +584,11 @@
     
 
 <div id="contact">
-    <div class="grid_10" style="border: 2px solid #562313; margin-top:25px;">
+    <div class="grid_10 outer_box">
     <!-- <div class="intro-outer" > -->
 
         <h2>Stay Connected! </h2>
-        <div class="grid_8" style="border: 2px solid #562313;margin:25px 0;">
+        <div class="grid_8 inner_box contact">
             <p>
                 Feel free to checkout the following websites or email me if you have any questions! <br>
                 Phone: +1(647)293-4273

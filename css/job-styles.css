@@ -48,10 +48,11 @@ p.job-description::-webkit-scrollbar-thumb:hover {
     float:left;
 }
 .job-title {
-    border: 1px solid #562313;
+    /* border: 2px solid #562313; */
+    border: 3px dotted rgb(44, 89, 86);
     padding: 5px;
     padding-bottom: 1px;
-    background:hsla(16, 15%, 69%, 0.7);
+    /* background:hsla(16, 15%, 69%, 0.7); */
     width: 95%;
     box-sizing: content-box;
     word-wrap: break-word;
@@ -67,11 +68,12 @@ p.job-description::-webkit-scrollbar-thumb:hover {
 
 /* Expandable description box */
 .experience-description {
-    border: 1px solid #562313;
+    /* border: 1px solid #562313; */
     /* margin: 10px; */
+    border-left: 3px dotted rgb(10, 81, 76);
     margin: 0;
     margin-right: 7px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding: 0;
     cursor: pointer;
     overflow:hidden;
@@ -99,13 +101,15 @@ p.job-description::-webkit-scrollbar-thumb:hover {
 }
 
 .experience-description::-webkit-scrollbar-track {
-    background: #b9b1b0b9; /* Color of the scrollbar track */
+    /* background: #b9b1b0b9; Color of the scrollbar track */
+    background: rgb(82, 130, 126);
+    
 }
 
 .experience-description::-webkit-scrollbar-thumb {
-    background: #b54747a8; /* Color of the scrollbar thumb */
+    background: #9f2b2bb4; /* Color of the scrollbar thumb */
 }
 
 .experience-description::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color of the scrollbar thumb on hover */
+    background: #3a0707; /* Color of the scrollbar thumb on hover */
 }

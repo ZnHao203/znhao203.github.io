@@ -29,7 +29,7 @@ h4 {
 }
 p {
     font-size: 11pt;
-    background-color: rgb(181, 164, 164);
+    /* background-color: rgb(181, 164, 164); */
     text-align: justify;
     width: fit-content;
     line-height: 1.4em;
