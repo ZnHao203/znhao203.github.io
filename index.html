@@ -91,24 +91,35 @@
 <div id="skills">
     <div  class="grid_10" style="border: 2px solid #562313; margin-top:25px;">
         <h2>Skills</h2>
+        <div class="grid_9">
         <div class="skills-text">
             <p><b>Programming Languages</b></p>
             <ul>
                 <li>Proficient with work experience: C, C++, Python, Bash, Makefile</li>
                 <li>Familiar with & Knowledge of: CSS, HTML, JavaScript, Java, R, Racket, SQL</li>
             </ul>
-            <p><b>Development Tools</b></p>
-            <ul>
-                <li>Development under: Linux, Windows, Docker, VirtualBox</li>
-                <li>Version Control: Git, Jenkins, SVN, Bitbucket</li>
-                <li>Concepts & Tools: Agile, Jira, Confluence</li>
-            </ul>
-            <p><b>Others</b></p>
+            <p><b>Technical</b></p>
             <ul>
                 <li>Concepts: computer networks, computer security, cryptography, 
                     embedded software development, test automation</li>
+                <li>Embedded: Arm, BLE, FOTA, Eclipse, IAR, Keil</li>
+                <li>System & Security: Kali, Wireshark, Docker, VirtualBox, ECC</li>
                 <li>Modelling: SOLIDWORKS, SketchUp, Shapr3D</li>
             </ul>
+            <p><b>Certificate</b></p>
+            <ul>
+                <li>Machine Learning (Octave, 2021)</li>
+                <li>Data Analysis with Python (Python & MySQL, 2021)</li>
+            </ul>
+            <p><b>Development Tools</b></p>
+            <ul>
+                <li>Environments: Linux, Windows</li>
+                
+                <li>Version Control: Git, Jenkins, SVN, Bitbucket</li>
+                <li>Concepts & Tools: Agile, Jira, Confluence</li>
+            </ul>
+            
+        </div>
         </div>
 
     </div>
@@ -120,11 +131,12 @@
     <!-- <div id="experience" class="grid_12"> -->
     
 
-    <div class="grid_12" style="border: 2px solid #562313; margin-top:25px;">
+    <div class="grid_11" style="border: 2px solid #562313; margin-top:25px;">
     <!-- <div class="outer-block"> -->
     <!-- <div class="outer-block" > -->
 
         <h2>Past Internship Experience</h2>
+        <p><i>(Click to expand)</i></p>
 
         <!-- <div class="job-timeline">
             <h5>Job Timeline Decending</h5>
@@ -139,15 +151,16 @@
         </div> -->
 
         <!-- <div class="job-block"> -->
-        <div class="grid_5">
+        <div class="grid_5" >
             <div class="job-title">
-                <h3>Firmware Developer Co-op</h3>
+                <h3>Firmware Developer Intern</h3>
                 <h4>
                     ON Semiconductor, Corp (Onsemi)<br>
                     2024.5-2024.8
                 </h4>
                 <p class="job-keywords">
-                    Embedded C, Wireless, Bluetooth, FOTA, RTOS, Eclipse
+                    SDK Dev., Cortex-M33 MCU, BLE, RTOS, FOTA,
+                    Embedded C, Eclipse
                 </p>
             </div>
 
@@ -168,17 +181,21 @@
                 This experience taught me much about embedded software for 
                 wireless/DSP devices and firmware testing using lab equipment.
             </p> -->
-            <p class="job-description">
-                During my internship at Onsemi, I played a key role in the SDK release 
-                process for an Arm Cortex-M33 based Bluetooth Low Energy wireless MCU.
-                I made code modifications, conducted verification tests for multiple BLE
-                applications across Eclipse, IAR, and Keil IDEs, and resolved over 10
-                non-volatile global flags to prevent compiler issues.<br>
-                I also migrated handler code for 7 BLE applications, including FOTA and
-                RTOS, ensuring seamless functionality and compliance with customer 
-                requiprements. The experience enhanced my C programming skills and provided 
-                valuable insights into embedded software development for wireless/DSL devices.
-            </p>
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        During my internship at Onsemi, I played a key role in the SDK release 
+                        process for an Arm Cortex-M33 based Bluetooth Low Energy wireless MCU.
+                        I made code modifications, conducted verification tests for multiple BLE
+                        applications across Eclipse, IAR, and Keil IDEs, and resolved over 10
+                        non-volatile global flags to prevent compiler issues.<br>
+                        I also migrated handler code for 7 BLE applications, including FOTA and
+                        RTOS, ensuring seamless functionality and compliance with customer 
+                        requiprements. The experience enhanced my C programming skills and provided 
+                        valuable insights into embedded software development for wireless/DSL devices.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <!-- <div class="job-block"> -->
@@ -190,7 +207,7 @@
                     2024.3-2024.5
                 </h4>
                 <p class="job-keywords">
-                    Network Research, Linux NIC Schedulers, Mininet, UDP, Python
+                    Network Research, QDisc Linux Schedulers, Traffic Simulations, Python
                 </p>
             </div>
             <!-- <p  class="job-description">
@@ -211,23 +228,28 @@
                 flow behaviour under some specific configurations.
                 Although my research has concluded, the reasons for these exceptions remain areas for further investigation. 
             </p> -->
-            <p  class="job-description">
-                Under the supervision of Prof. Mina Arashloo, I conducted experiments 
-                to assess the robustness of network traffic performance. Utilizing network 
-                traffic simulations, I analyzed and disrupted the fairness scheme of Linux 
-                traffic control schedulers, specifically focusing on the HHF variant of QDiscs 
-                (Queuing Disciplines). <br>
-                I designed a multi-threaded traffic flow generation algorithm to generate 
-                various flow scenarios and compared throughput plots for different QDisc
-                configurations. Through this evaluation, I aimed to understand the impact 
-                of QDiscs on traffic shaping and identify exceptional flow behavious under 
-                specific configurations.<br>
-                This evaluation revealed exceptional flow behavior under specific configurations,
-                highlighting areas for further investigation in fairness schemes of QDiscs
-                and network traffic management.
-            </p>
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        Under the supervision of Prof. Mina Arashloo, I conducted experiments 
+                        to assess the robustness of network traffic performance. Utilizing network 
+                        traffic simulations, I analyzed and disrupted the fairness scheme of Linux 
+                        traffic control schedulers, specifically focusing on the HHF variant of QDiscs 
+                        (Queuing Disciplines). <br>
+                        I designed a multi-threaded traffic flow generation algorithm to generate 
+                        various flow scenarios and compared throughput plots for different QDisc
+                        configurations. Through this evaluation, I aimed to understand the impact 
+                        of QDiscs on traffic shaping and identify exceptional flow behavious under 
+                        specific configurations.<br>
+                        This evaluation revealed exceptional flow behavior under specific configurations,
+                        highlighting areas for further investigation in fairness schemes of QDiscs
+                        and network traffic management.
+                    </p>
+                </div>
+            </div>
         </div>
 
+        <div class="clear"></div>
 
         <!-- <div class="grid_3">
                 <h5>Job Timeline Decending</h5>
@@ -244,13 +266,13 @@
         <div class="grid_5">
         <!-- <div class="job-block"> -->
             <div class="job-title">
-                <h3>Systems Software Development Student</h3>
+                <h3>Systems Software Developer Intern</h3>
                 <h4>
-                    Blackberry, Ltd.<br>
+                    Blackberry, Ltd. (QNX)<br>
                     2023.9-2023.12
                 </h4>
                 <p class="job-keywords">
-                    QNX, Cryptography, Virtual Box, Linux, System-level C, Python, JSON 
+                    Test Framework for Cryptography Lib, System-level C, Python, JSON, Linux
                 </p>
             </div>
             <!-- <p class="job-description">
@@ -271,96 +293,118 @@
                 The automated test framework supports testing all ECC variant algorithms and SHA256. 
                 The development is under Linux environment, using Virtual Box.
             </p> -->
-            <p class="job-description">
-                I designed a Python-based test framework for Blackberry Certicom's system-level 
-                cryptography library, crucial to obtaining a safety certification.
-                This framework aimed to achieve higher code coverage and zero false-negative 
-                test cases. Utilizing compile-time code generation techniques, I integrated this 
-                framework with the testware Makefile system to generate test files in C.<br>
-                Additionally, I created a runtime fault injection feature using statistical 
-                methods. This feature, based on user-defined fault injection percentages, dynamically
-                inserted faults into test cases, mimicking real-world scenarios. This framework 
-                successfully maintained zero false-negative test cases while achieving fault 
-                detection eates matching user inputs in the long run. <br>
-                With support for testing all ECC variant algorithms and SHA256, this test framework
-                is easily scalable and maintainable.
-            </p>
+
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        I designed a Python-based test framework for Blackberry Certicom's system-level 
+                        cryptography library, crucial to obtaining a safety certification.
+                        This framework aimed to achieve higher code coverage and zero false-negative 
+                        test cases. Utilizing compile-time code generation techniques, I integrated this 
+                        framework with the testware Makefile system to generate test files in C.<br>
+                        Additionally, I created a runtime fault injection feature using statistical 
+                        methods. This feature, based on user-defined fault injection percentages, dynamically
+                        inserted faults into test cases, mimicking real-world scenarios. This framework 
+                        successfully maintained zero false-negative test cases while achieving fault 
+                        detection eates matching user inputs in the long run. <br>
+                        With support for testing all ECC variant algorithms and SHA256, this test framework
+                        is easily scalable and maintainable.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <!-- <div class="job-block"> -->
         <div class="grid_5">
             <div class="job-title">
-                <h3>Software/Firmware Engineering Co-op</h3>
+                <h3>Software/Firmware Engineer Intern</h3>
                 <h4>
                     Microchip Technology, Inc.<br>
                     2023.1-2023.4
                 </h4>
                 <p class="job-keywords">
-                    C++, I2C, Flash Memory Chip, Device Driver Dev, DLL
+                    Device Driver and EVB Dev., Flash Memory Chip, DLL, I2C, C++
                 </p>
             </div>
-            <p class="job-description">
-                During my second term at Microchip, I focused on various C++ dynamic-linked 
-                libraries used for chip-flashing, specifically for the addition of a new 
-                device, the Universal Controller (UC), which serves as an intermediate 
-                device between the PC and the Evaluation Board (EVB) connection. <br>
-                I developed a device driver and interface for the Azurite series platforms 
-                to use the UC to control multiple chip platforms. Additionally, I addressed 
-                external customer requests by revolving DLL bugs for the driver of a prototype 
-                chipboard.<br>
-                I also enhanced chip communication speed in I2C mode by changing from single-byte 
-                to multi-byte transmission. Other tasks included reorganizing the DLL library's 
-                code structure and performing regression and verification tests for my modifications.
-            </p>
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        During my second term at Microchip, I focused on various C++ dynamic-linked 
+                        libraries used for chip-flashing, specifically for the addition of a new 
+                        device, the Universal Controller (UC), which serves as an intermediate 
+                        device between the PC and the Evaluation Board (EVB) connection. <br>
+                        I developed a device driver and interface for the Azurite series platforms 
+                        to use the UC to control multiple chip platforms. Additionally, I addressed 
+                        external customer requests by revolving DLL bugs for the driver of a prototype 
+                        chipboard.<br>
+                        I also enhanced chip communication speed in I2C mode by changing from single-byte 
+                        to multi-byte transmission. Other tasks included reorganizing the DLL library's 
+                        code structure and performing regression and verification tests for my modifications.
+                    </p>
+                </div>
+            </div>
         </div>
+
+        <div class="clear"></div>
 
         <!-- <div class="job-block"> -->
         <div class="grid_5">
             <div class="job-title">
-                <h3>Software/Firmware Engineering Co-op</h3>
+                <h3>Software/Firmware Engineer Intern</h3>
                 <h4>
                     Microchip Technology, Inc.<br>
                     2022.5-2022.8
                 </h4>
                 <p class="job-keywords">
-                    Validation Tool, Python, TCL, Lab Equipment
+                    Test Automation using ROBOT, Python, TCL, Lab Equipment
                 </p>
             </div>
-            <p class="job-description">
-                I contributed to a Python validation tool for Azurite-series chip platforms.
-                My changes involved transitioning from an older TCL tool to Python, which 
-                enhanced code generation and test automation flexibility. I imported existing 
-                features from the TCL tool and added new ones to support a switch box for 
-                managing multiple chip platforms. As part of the development process, I 
-                reorganized the tool's code structure to be chip-platform-independent, a 
-                strategic move that makes future expansions and updates much easier.
-                I also improved the accuracy of oscilloscope measurement methods within a 
-                Python equipment library. 
-            </p>
+
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        I contributed to a Python validation tool for Azurite-series chip platforms.
+                        My changes involved transitioning from an older TCL tool to Python, which 
+                        enhanced code generation and test automation flexibility. I imported existing 
+                        features from the TCL tool and added new ones to support a switch box for 
+                        managing multiple chip platforms. As part of the development process, I 
+                        reorganized the tool's code structure to be chip-platform-independent, a 
+                        strategic move that makes future expansions and updates much easier.
+                        I also improved the accuracy of oscilloscope measurement methods within a 
+                        Python equipment library. 
+                    </p>
+                </div>
+            </div>
         </div>
 
         <!-- <div class="job-block"> -->
         <div class="grid_5">
             <div class="job-title">
-                <h3>Technical Intern</h3>
+                <h3>Technical Intern (QA Tools)</h3>
                 <h4>
                     Synopsys, Inc.<br>
                     2021.7-2021.12
                 </h4>
                 <p class="job-keywords">
-                    QA Coverage Tool, Python, TCL/Tk, Lexer & Parser, LCOV
+                    Coverage Tool Dev., Lexer & Parser, LCOV, Python, TCL/Tk
                 </p>
             </div>
-            <p class="job-description">
-                For my first internship, I designed a Python tool to analyze the code 
-                coverage of TCL/Tk source code and generate HTML reports for regression 
-                tests, similar to the LCOV tool in GCC. The tool uses lexers and parsers 
-                to analyze and modify source code and process output logs to calculate 
-                code coverage. I later expanded it to process Python and Basic code.<br>
-                Using the validation tool, I detected uncovered branches and syntax errors 
-                in the source code, creating four Jira tickets for source code improvement.
-                After I presented the tool, multiple QA project groups adopted it. <br>
-            </p>
+
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        For my first internship, I designed a Python tool to analyze the code 
+                        coverage of TCL/Tk source code and generate HTML reports for regression 
+                        tests, similar to the LCOV tool in GCC. The tool uses lexers and parsers 
+                        to analyze and modify source code and process output logs to calculate 
+                        code coverage. I later expanded it to process Python and Basic code.<br>
+                        Using the validation tool, I detected uncovered branches and syntax errors 
+                        in the source code, creating four Jira tickets for source code improvement.
+                        After I presented the tool, multiple QA project groups adopted it. <br>
+                    </p>
+                </div>
+            </div>
+            
         </div>
 
         
@@ -387,6 +431,7 @@
     <!-- <div class="outer-block"> -->
     <div class="grid_11" style="border: 2px solid #562313; margin-top:25px;">
         <h2>Personal Projects</h2>
+        <p><i>(Click to expand)</i></p>
 
         <!-- <div class="job-timeline">
             <h5>Project Timeline Decending</h5>
@@ -407,11 +452,15 @@
                     Website from Scratch, HTML, CSS, Shapr3D, SketchUp
                 </p>
             </div>
-            <p class="job-description">
-                I designed and developed this personal portfolio website to showcase my projects, skills, and experience.
-                I started building this website from scratch, which included custom coding of the site layout and features and modelling the background image. For more details 
-                of this city background, you can explore this <a href="docs/gallery.html">gallery</a> tab.
-            </p>
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        I designed and developed this personal portfolio website to showcase my projects, skills, and experience.
+                        I started building this website from scratch, which included custom coding of the site layout and features and modelling the background image. For more details 
+                        of this city background, you can explore this <a href="docs/gallery.html">gallery</a> tab.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="grid_5">
@@ -423,12 +472,16 @@
                     OpanAI GPT, Prompt Engineering, Website Scraper, Python
                 </p>
             </div>
-            <p class="job-description">
-                After completing OpenAI's GPT prompting course, I developed a Python script to filter my school's career website - 
-                WaterlooWorks for job postings that match my interests. Given the account info and website link, the script gathers 
-                information for each job, processes it, and then uses GPT to summarize job descriptions. It generates a table of selected 
-                jobs with crucial information such as job requirements, company introductions, and other details, aiding my job application process.
-            </p>
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        After completing OpenAI's GPT prompting course, I developed a Python script to filter my school's career website - 
+                        WaterlooWorks for job postings that match my interests. Given the account info and website link, the script gathers 
+                        information for each job, processes it, and then uses GPT to summarize job descriptions. It generates a table of selected 
+                        jobs with crucial information such as job requirements, company introductions, and other details, aiding my job application process.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -436,6 +489,7 @@
     <!-- <div class="outer-block" > -->
 
         <h2>Revelant Assignments</h2>
+        <p><i>(Click to expand)</i></p>
 
         <div class="grid_5">
         <!-- <div class="job-block"> -->
@@ -446,13 +500,17 @@
                     Kali Linux, Wireshark, Malware Analysis, Memory & File System Inspection
                 </p>
             </div>
-            <p class="job-description">
-                From the term-long course project from the graduate-level Digital Forensics and Incident Response course, I used Kali Linux to perform different investigations, including file forensics of a USB drive, file system forensics and memory forensics
-                of two PCs. I also used Wireshark to analyze a network capture file, including inspecting the contents of different packets 
-                and finding a covert channel from traffic shaping analysis.
-                This project familiarized me with concepts in digital forensics and network analysis, especially for different network protocols
-                like SMTP and DNS. 
-            </p>
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        From the term-long course project from the graduate-level Digital Forensics and Incident Response course, I used Kali Linux to perform different investigations, including file forensics of a USB drive, file system forensics and memory forensics
+                        of two PCs. I also used Wireshark to analyze a network capture file, including inspecting the contents of different packets 
+                        and finding a covert channel from traffic shaping analysis.
+                        This project familiarized me with concepts in digital forensics and network analysis, especially for different network protocols
+                        like SMTP and DNS. 
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="grid_5">
@@ -464,11 +522,15 @@
                     OS, Linux Kernel, Docker Container, Multi-Threading, C
                 </p>
             </div>
-            <p class="job-description">
-                In the Operating Systems course, I implemented multiple kernel concepts in C, including locks, threads, and paging in a Linux kernel 
-                inside a Docker container. Despite kernel knowledge, I learned much about system-level programming, like handling resource sharing
-                and debugging a multi-threaded program.
-            </p>
+            <div class="experience-description" onclick="toggleExpand(this)" >
+                <div class="experience-content">
+                    <p>
+                        In the Operating Systems course, I implemented multiple kernel concepts in C, including locks, threads, and paging in a Linux kernel 
+                        inside a Docker container. Despite kernel knowledge, I learned much about system-level programming, like handling resource sharing
+                        and debugging a multi-threaded program.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -481,7 +543,7 @@
         <h2>Academic Profile </h2>
 
         <!-- <div class="text-block"> -->
-        <div class="grid_8" style="border: 2px solid #562313">
+        <div class="grid_9" style="border: 2px solid #562313">
             <h3>Program</h3>
             <p style="font-size:12pt;">
                 <b>University of Waterloo</b> <br>
@@ -493,8 +555,8 @@
             <h3>Awards</h3>
             <p>
                 <b>Academic Standing:</b> Excellent Standing (Highest)<br>
-                <b>Awards:</b> Recipent of $2000 University of Waterloo President's Scholarship of Distinction (2021)<br>
-                <b>Term Distinction Honours:</b> Winter 2021, Winter 2022, Winter 2023, Spring 2023, 
+                <b>Awards:</b> <br> Recipent of $2000 University of Waterloo President's Scholarship of Distinction (2021)<br>
+                <b>Term Distinction Honours:</b> <br> Winter 2021, Winter 2022, Winter 2023, Spring 2023, 
                 Fall 2023, Winter 2024<br>
             </p>
             <h3>Courses</h3>
@@ -502,10 +564,10 @@
         <!-- <div class="grid_10" style="border: 2px solid #562313; padding:0; margin:0;"> -->
         <div class="clear"></div>
     
-        <div class="grid_3" style="border: 2px solid #562313">
+        <div class="grid_3" style="border: 2px solid #562313; margin-right: 5px;">
             <h3>From University</h3>
-            <ul>
-                <li>Operating Systems</li>
+            <ul style="font-family: Arial, Helvetica, sans-serif;font-size: 14px; padding-left:12px;">
+                <li >Operating Systems</li>
                 <li>Computer Networks</li> 
                 <li>Microprocessors</li>
                 <li>Software Security<br> & System Security</li>
@@ -515,18 +577,19 @@
         </div>
         <div class="grid_6" style="border: 2px solid #562313">
             <h3>From Coursera</h3>
-            <p style="text-align: left;">
-                <b>Machine Learning - Octave Programming </b> <br>
-                (2020.9-2021.1):
-                <a href="https://www.coursera.org/account/accomplishments/verify/CW4JNFW479V6" target="_blank">(Certificate)</a><br> 
-                Completed Octave projects, applied concepts of logistic regression, support vector machine, neural networks
-                <br>
-                <b>Data Analysis with Python - Python & MySQL Programming </b> <br>
-                (2021.1-2021.2): 
-                <a href="https://www.coursera.org/account/accomplishments/verify/MDQ6NPN57N5H" target="_blank">(Certificate)</a>  <br>
-                Utilized Pandas, Numpy, and Scipy libraries to process and visualize data
-                
-            </p>
+            <ul style="font-family: Arial, Helvetica, sans-serif;font-size: 14px; padding-left:12px;">
+                <li><b>Machine Learning - Octave Programming </b> 
+                    <a href="https://www.coursera.org/account/accomplishments/verify/CW4JNFW479V6" target="_blank">(Cert)</a>
+                    <br>
+                    Completed Octave projects, applied concepts of logistic regression, support vector machine, neural networks
+                </li><br>
+                <li>
+                    <b>Data Analysis with Python - Python & MySQL Programming </b> 
+                    <a href="https://www.coursera.org/account/accomplishments/verify/MDQ6NPN57N5H" target="_blank">(Cert)</a>
+                    <br>
+                    Utilized Pandas, Numpy, and Scipy libraries to process and visualize data
+                </li>
+            </ul>
         </div>
 
         <!-- </div> -->
@@ -582,6 +645,9 @@
 </div>
 
 <img class="bg" src="img/IMG_27381.PNG" alt="">
+
+<!-- Imports -->
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
