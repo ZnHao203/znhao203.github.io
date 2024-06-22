@@ -1,0 +1,84 @@
+
+.outer_box {
+    border: 2px solid #562313;
+    margin-top:25px;
+    background-color: rgb(181, 164, 164, 0.3);
+    padding:10px;
+}
+
+.inner_box {
+    background-color: rgb(181, 164, 164, 0.7);
+}
+
+.outer_box.intro {
+    margin-top: 50px;
+}
+
+.inner_box.intro {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:10px;
+    background:hsla(16, 15%, 69%, 0.3);
+    max-width: 95%;
+    width: fit-content;
+    box-sizing: content-box;
+    word-wrap: break-word;
+    block-size:auto;
+}
+
+.inner_box.skills {
+    /* border: 1px solid #562313; */
+    padding-left: 5px; 
+    padding-right: 10px;
+    margin:10px;
+    /* background:hsla(16, 15%, 69%, 0.3); */
+    background: linear-gradient(to bottom right, rgba(181, 164, 164, 0.7), rgba(181, 164, 164, 0.4));;
+
+    block-size:auto;
+}
+
+.outer_box.projects {
+    background-color:transparent;
+    border:transparent;
+    padding:0;
+}
+
+.inner_box.projects.wrapper_colored {
+    background-color: rgb(181, 164, 164, 0.3);
+    /* margin-bottom: 20px; */
+    border: 2px solid #562313;
+    padding:5px;
+    width:fit-content;
+    box-sizing: content-box;
+    word-wrap: break-word;
+    block-size:auto;
+}
+
+.inner_box.projects {
+    background-color: rgba(153, 156, 153, 0.7);
+    margin-bottom: 20px;
+}
+
+.inner_box.academic.upper {
+    background: linear-gradient(to top right, rgba(181, 164, 164, 0.7), rgba(181, 164, 164, 0.4));
+    padding-left:5px;
+}
+
+.inner_box.academic.lowerleft {
+    /* border: 2px solid #562313; */
+    margin-right: 5px;
+}
+
+.inner_box.contact {
+    /* border: 2px solid #562313; */
+    /* margin-top:25px; */
+    /* background-color: rgb(189, 182, 170, 0.3); */
+    /* opacity: 0.3; */
+    padding: 5px;
+    /* background-color: rgb(181, 164, 164, 0.7); */
+}
+
+.inner_box.gallery.text {
+    padding: 5px;
+}
+
