@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/960.css" />
+  <link href="/css/background.css" type="text/css" rel="stylesheet" />
+  <link href="/css/boxes.css" type="text/css" rel="stylesheet" />
+  <link href="/css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="/css/table.css" type="text/css" rel="stylesheet" />
+  <link href="/css/job-styles.css" type="text/css" rel="stylesheet" />
+  <link href="/css/intro-styles.css" type="text/css" rel="stylesheet" />
+  <link href="/css/list.css" type="text/css" rel="stylesheet" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+</head>
+<body>
+<div class="container_12 clearfix">
+<div class="grid_12">
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<div class="grid_10 outer_box">
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+  </footer>
+</div>
+
+</div>
+<img class="bg" src="/img/IMG_27381.PNG" alt="">
+<script src="/js/scripts.js"></script>
+
+</body>
+</html>
