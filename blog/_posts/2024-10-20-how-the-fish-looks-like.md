@@ -11,6 +11,6 @@ In this post, I'm sharing an early draft of my fish visualization. The GIFs belo
 
 As a fun twist, I’ve even added a monocle to the fish - just for fun. 
 
-![A default fish](./assets/241020_fish_line_draft.gif)
-![Add a monocle!](./assets/241020_fish_with_glass.gif)
+![A default fish](/blog/assets/241020_fish_line_draft.gif)
+![Add a monocle!](/blog/assets/241020_fish_with_glass.gif)
 

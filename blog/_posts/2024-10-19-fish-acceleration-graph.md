@@ -15,6 +15,6 @@ First, I used a webcam to capture pictures of the fish tank every second. Then, 
 ## Result
 The acceleration analysis showed that the fish’s movement followed a bell curve. Below is the graph I generated from a set of images—about 30 minutes of footage, with one picture taken per second.
 
-![Bell Curve of Fish Speeds](./assets/241019_bell_curve_fish.png)
+![Bell Curve of Fish Speeds](/blog/assets/241019_bell_curve_fish.png)
 
 Though I will need to do further analysis and integrate this data into the larger picture of fish movements, this is a nice temporary result to share.
