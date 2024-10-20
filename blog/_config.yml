@@ -33,6 +33,7 @@ github_username:  znhao203
 
 # Build settings
 theme: minima
+remote_theme: minima
 plugins:
   - jekyll-feed
 
