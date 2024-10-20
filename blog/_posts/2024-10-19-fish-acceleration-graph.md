@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "First Recording - Fish Movement Graph"
+title: "Analyzing Fish Movement: From Data to Bell Curve"
 date: 2024-10-19 11:40:01
 categories: analysis
 tags: [fish, movement, graph, bell-curve]
+thumbnail: /blog/assets/241019_bell_curve_fish.png
 ---
-# Analyzing Fish Movement: From Data to Bell Curve
 
 In this post, I’ll quickly walk through how I analyzed the swimming patterns of my fish and plotted a bell curve of their acceleration distribution.
 

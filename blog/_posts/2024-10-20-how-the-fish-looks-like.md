@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Early Draft of Fish Visualization"
-date: 2024-10-19 11:40:01
+date: 2024-10-20 00:40:01
 categories: visualization
 tags: [fish, godot, animation, draft, visualization]
+thumbnail: /blog/assets/241020_thumbnail.png
 ---
-# Early Draft of Fish Visualization
 
 In this post, I'm sharing an early draft of my fish visualization. The GIFs below showcase the Godot animation, drawn entirely in simple lines. And yes, I drew this!
 
