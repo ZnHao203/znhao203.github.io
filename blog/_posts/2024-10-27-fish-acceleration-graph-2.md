@@ -4,7 +4,7 @@ title: "Continuing Exploration of Fish Movement: A Shift to Polar Coordinates"
 date: 2024-10-27 04:45:01
 categories: analysis
 tags: [fish, movement, graph, bell-curve, simulation]
-thumbnail: /blog/assets/241019_bell_curve_fish.png
+thumbnail: /blog/assets/241027_thumbnail.png
 ---
 
 This post continues from my [last discussion](/blog/analysis/2024/10/19/fish-acceleration-graph.html). Previously, I analyzed acceleration in Cartesian coordinates; however, I had a thought—why not switch to polar coordinates? It seems more intuitive for modeling fish movements, where theta represents heading direction and r represents speed.
